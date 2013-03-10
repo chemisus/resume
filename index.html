@@ -1,66 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Resume by chemisus</title>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            * {
+                font-size: 1em;
+                margin: 0;
+                padding: 0;
+                line-height: 1.35em;
+                font-family: sans-serif;
+            }
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Resume</h1>
-        <p></p>
+            body {
+                max-width: 47em;
+                margin: auto;
+            }
 
-        <p class="view"><a href="https://github.com/chemisus/resume">View the Project on GitHub <small>chemisus/resume</small></a></p>
+            h1 {
+                font-size: 2em;
+            }
 
+            h2 {
+                font-size: 1.6em;
+            }
 
-        <ul>
-          <li><a href="https://github.com/chemisus/resume/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/chemisus/resume/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/chemisus/resume">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+            h3 {
+                font-size: 1.35em;
+            }
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            h4 {
+                font-size: 1.2em;
+                color: gray;
+            }
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            h5 {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                font-size: 1em;
+                color: gray;
+            }
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            h6 {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                font-size: .8em;
+                color: gray;
+            }
 
-<h3>Designer Templates</h3>
+            p, li {
+                text-align: justify;
+            }
+            
+            ul ul {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+            section > * {
+                float: left;
+                max-width: 33em;
+            }
 
-<h3>Rather Drive Stick?</h3>
+            li {
+                margin-left: 1.5em;
+            }
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            header {
+                margin: 1em;
+            }
 
-<h3>Authors and Contributors</h3>
+            section {
+                margin: 1em;
+            }
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+            section > h2 {
+                clear: left;
+                max-width: 6em;
+                width: 6em;
+                background-color: lightgray;
+                border-radius: 0.5em;
+                margin-right: 1em;
+                text-align: center;
+                margin-bottom: 0.5em;
+            }
 
-<h3>Support or Contact</h3>
+            section > * > li {
+                margin-left: 0;
+                display: block;
+            }
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/chemisus">chemisus</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+            section:after {
+                content: ".";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0;
+            }
+
+            header:before {
+                content: 'TH';
+                float: right;
+                font-size: 4em;
+                background-color: purple;
+                line-height: 2em;
+                width: 2em;
+                text-align: center;
+                color: white;
+                border-radius: 20%;
+            }
+
+            dl {
+                text-align: left;
+            }
+
+            dt {
+                font-size: 1.35em;
+                font-weight: bold;
+            }
+
+            dd {
+                display: inline-block;
+                min-width: 6em;
+                margin: 0em;
+                margin-left: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Terrence Howard</h1>
+            <h4>Software Engineer</h4>
+            1653 Slash Pine PL., Oviedo, Florida 32765<br />
+            <abbr title="Phone Number">P</abbr>: (239) 222-1246<br />
+            <abbr title="Email Address">E</abbr>: terrence.l.howard@gmail.com<br />
+        </header>
+        <section>
+            <h2>Objective</h2>
+            <p>I intend to utilize my experience as a software developer and computer technician in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve an esteemed organization with my dedication & extensive experience and interested to build a long term career.</p>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <h3>Website Developer, University of Central Florida</h3>
+                    <h5>Orlando, Florida — June 2011 – January 2013</h5>
+                    <p>I was brought on to help develop the website for ICubed. Eventually took over development of the websites for YES and GEMS.</p>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Developed the website for ICubed using ASP.Net, MSSql, HTML5, CSS3</li>
+                        <li>Maintained the website for YES and GEMS using PHP, MySql, HTML, CSS</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Theta Tau, Professional Engineering Fraternity</h3>
+                    <h5>Website Administrator — August 2009 – December 2012</h5>
+                    <p>Created the chapter's website and maintained it for several years til graduation. Even after graduation I still make occasional modifications to the website.</p>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Currently uses self created projects Slinpins (Dependency Injector), Dragon (PHP Framework), as well as jQuery, Angular JS, HTML5, CSS3, git</li>
+                        <li>Uses Twitter’s Bootstrap to make it a Responsive Web Design</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Website Developer, AKT Enterprises</h3>
+                    <h5>Orlando, Florida — November 2010 – June 2011</h5>
+                    <p>AKT specializes in marketing and promotions for bands and brands. I was hired to implement and update the content management systems for a wide variety of clients.</p>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Created Mintees.com using PHP, HTML5, CSS3, jQuery; having it up and running within a four week deadline</li>
+                        <li>Worked on too many to count Content Management Systems using PHP, HTML, CSS, jQuery for numerous clients.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Software Developer, Centrix Networks</h3>
+                    <h5>Orlando, Florida — May 2010 – November 2010</h5>
+                    <p>Centrix Networks is a VoIP telephony provider for Orlando, Florida. My main purpose was to create a portal for the technical support team to organize emails and keep track of phone calls in regards to support tickets.</p>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Developed a portal for technical support to organize communications between the tech support team and customers using PHP, MySql, HTML, CSS</li>
+                        <li>Created a module that imported emails into the system using PHP, MySql</li>
+                        <li>Made updates to the main website using PHP, MySql, HTML, CSS</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Website Administrator, Volunteers in Florida</h3>
+                    <h5>Orlando, Florida — January 2008 – December 2009</h5>
+                    <p>Hired to maintain the organization’s database and website. Even though I am no longer employed by them, I still provide help or assistance when requested.</p>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Tracked down and resolved long standing bugs left by previous developers using PHP, MySql, HTML, CSS</li>
+                        <li>Doubled as network admin and handled network and computer issues.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Software Developer, Total Custom Solutions</h3>
+                    <h5>Cape Coral, Florida — August 2003 – December 2006</h5>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                        <li>Designed and maintained databases for multiple clients using VBA, Access 98/2000</li>
+                        <li>Coded custom modules for databases depending on client's requests using VBA, Access 98/2000</li>
+                        <li>Created server and client applications for various users using VB6 and VB.Net</li>
+                        <li>Transferred and repaired websites abandoned from previous developers using ASP and ASP.Net</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Computer & Network Technician, Chemisus Inc.</h3>
+                    <h5>Fort Myers, Florida — August 2003 – December 2006</h5>
+                    <p>Made house calls to provide services for computer and network issues. Tutored clients on the use of digital cameras, printers and various software programs.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>University of Central Florida</h3>
+                    <h5>Bachelor’s in Computer Science — 2007 – 2012</h5>
+                    <ul>
+                        <li>Graduated Fall 2012</li>
+                        <li>Bachelor’s Degree in Computer Science. GPA: 2.73/4.0</li>
+                        <li>Associate’s Degree. GPA: 3.5/4.0</li>
+                        <li>Member of Theta Tau, Professional Engineering Fraternity</li>
+                        <li>Member of Phi Theta Kappa, Academic Honor Society</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>Platforms</dt>
+                        <dd>Fedora</dd>
+                        <dd>Ubuntu</dd>
+                        <dd>Android</dd>
+                        <dd>Windows 9x</dd>
+                        <dd>Windows 2k</dd>
+                        <dd>Windows XP</dd>
+                        <dd>Windows 7</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Languages and APIs</dt>
+                        <dd>C</dd>
+                        <dd>C++</dd>
+                        <dd>C#</dd>
+                        <dd>VB</dd>
+                        <dd>VB.net</dd>
+                        <dd>VB6</dd>
+                        <dd>Java</dd>
+                        <dd>ASP</dd>
+                        <dd>ASP.net</dd>
+                        <dd>PHP</dd>
+                        <dd>Javascript</dd>
+                        <dd>jQuery</dd>
+                        <dd>Angular.js</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Administration</dt>
+                        <dd>MSSql 2000+</dd>
+                        <dd>MySql 5.1+</dd>
+                        <dd>CouchDB</dd>
+                        <dd>Apache2</dd>
+                        <dd>IIS 5+</dd>
+                        <dd>PureFTP</dd>
+                        <dd>OpenSSH</dd>
+                        <dd>Gitolite</dd>
+                        <dd>cPanel</dd>
+                        <dd>phpMyAdmin</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Tools</dt>
+                        <dd>Visual Studio</dd>
+                        <dd>Netbeans</dd>
+                        <dd>Eclipse</dd>
+                        <dd>SSH</dd>
+                        <dd>SFTP</dd>
+                        <dd>git</dd>
+                        <dd>Wireshark</dd>
+                        <dd>LibreOffice</dd>
+                        <dd>Microsoft Office</dd>
+                        <dd>Google Documents</dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>References</h2>
+            <p>References can be provided on request.</p>
+        </section>
+    </body>
 </html>
