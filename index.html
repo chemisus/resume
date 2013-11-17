@@ -1,487 +1,217 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html data-ng-app="ResumeApp">
     <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style>
-            /* http://meyerweb.com/eric/tools/css/reset/ 
-               v2.0 | 20110126
-               License: none (public domain)
-            */
-
-            html, body, div, span, applet, object, iframe,
-            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-            a, abbr, acronym, address, big, cite, code,
-            del, dfn, em, img, ins, kbd, q, s, samp,
-            small, strike, strong, sub, sup, tt, var,
-            b, u, i, center,
-            dl, dt, dd, ol, ul, li,
-            fieldset, form, label, legend,
-            table, caption, tbody, tfoot, thead, tr, th, td,
-            article, aside, canvas, details, embed, 
-            figure, figcaption, footer, header, hgroup, 
-            menu, nav, output, ruby, section, summary,
-            time, mark, audio, video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 1em;
-                font: inherit;
-                vertical-align: baseline;
-            }
-            HTML5 display-role reset for older browsers 
-            article, aside, details, figcaption, figure, 
-            footer, header, hgroup, menu, nav, section {
-                display: block;
-            }
-            body {
-                line-height: 1em;
-            }
-            ol, ul {
-                list-style: none;
-            }
-            blockquote, q {
-                quotes: none;
-            }
-            blockquote:before, blockquote:after,
-            q:before, q:after {
-                content: '';
-                content: none;
-            }
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-
-
-
-            /**
-             *
-             *
-             */
-
-            * {
-                font-family: sans-serif;
-            }
-
-            [data-summary],
-            [data-accomplishments] {
-                float: left;
-                width: 100%;
-                max-width: 22em;
-                margin: 0.5em 3em 0.5em 0;
-            }
-
-            [data-summary] > div,
-            [data-skills] > div,
-            [data-accomplishments] > div {
-                font-style: italic;
-            }
-
-            #objective > section:after,
-            #professional > section:after, 
-            #personal > section:after,
-            #skills > section:after
-            {
-                content:"";
-                display:table;
-                clear:both;
-            }
-
-            #skills li {
-                float: left;
-                max-width: 6em;
-                width: 100%;
-            }
-
-            #objective > section {
-                float: right;
-                max-width: 30em;
-                width: 100%;
-            }
-
-            #objective p {
-                margin: 0.5em 0 0.5em 0;
-            }
-
-            body > section > section {
-                float: right;
-                max-width: 30em;
-                width: 100%;
-            }
-
-            body > section > header {
-                font-weight: bold;
-                clear: both;
-                float: left;
-                text-align: right;
-                max-width: 8em;
-                margin: 0.5em 2em 0.5em 0;
-                width: 100%;
-            }
-
-            body > section > section > header {
-                font-weight: bold;
-                margin: 0.5em 0 0.5em 0;
-            }
-
-            body > section {
-                max-width: 40em;
-                margin: 1em auto 1em auto;
-            }
-            
-            li {
-                display: list-item;
-                list-style: disc;
-                margin-left: 1.5em;
-            }
-
-            body > section:after,
-            #objective > section:after,
-            #professional > section:after, 
-            #personal > section:after,
-            #skills > section:after
-            {
-                content:"";
-                display:table;
-                clear:both;
-            }
-            
-            #header img {
-                float: right;
-                padding: 0em;
-                height: 7em;
-            }
-            
-            #name {
-                font-size: 2em;
-                font-weight: bold;
-                line-height: 1.5em;
-            }
-            
-            #title {
-                font-weight: bold;
-                line-height: 1.5em;
-            }
-        </style>
+        <title>Terrence Howard's Resume</title>
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              type="text/css"/>
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/resume.js"></script>
+        <!--<link rel="stylesheet" type="text/css" href="resume.less" />-->
+        <!--<script src="/less.js"></script>-->
+        <!--<script src="/bower_components/lesscss/dist/less-1.4.2.min.js"></script>-->
     </head>
     <body>
-        <section id="header">
-            <img src="qrcode-resume.png" />
-            <div id="name">Terrence Howard</div>
-            <div id="title">Software Developer</div>
-            <div>1653 Slash Pine PL., Oviedo, Florida 32765</div>
-            <div>T: (239) 222-1246</div>
-            <div>E: terrence.l.howard@gmail.com</div>
-        </section>
+        <article class="container">
+            <header class="row">
+                <div class="col-md-4">
+                    <h1>{{ resume.full_name }}</h1>
+                    <strong>{{ resume.title }}</strong>
+                    <address>
+                        {{ resume.address.street }}<br/>
+                        {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}
+                    </address>
+                    <address>
+                        <abbr title="Phone">P</abbr>: {{ resume.phone }}<br/>
+                        <abbr title="Email">E</abbr>: <a href="mailto:{{ resume.email }}">{{ resume.email }}</a>
+                    </address>
+                </div>
 
-        <section id="objective">
-            <header>
-                <div>Objective</div>
+                <div class="col-md-2 col-md-push-6">
+                    <img src="qrcode-resume.png"
+                         class="thumbnail"/>
+                    <a href="{{ resume.linkedin }}">{{ resume.linkedin }}</a><br/>
+                    <a href="{{ resume.github }}">{{ resume.github }}</a>
+                </div>
             </header>
-            <section>
-                <p>I intend to employ my experience as a software developer in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve a respectable organization with my dedication & extensive experience and interested to build a long term career.</p>
-            </section>
-        </section>
 
-        <section id="professional">
-            <header>
-                <div>Professional Experience</div>
-            </header>
-            <section data-clear>
-                <header>
-                    <div>Web Developer & Owner, imgphile.com</div>
-                    <div>Orlando, Florida — February 2013 – Current</div>
-                </header>
-                <section data-summary>
-                    <p>Imgphile.com is a website that will allow its members to upload images and discuss with other members of the community. I am the lead  developer for the project. The site will feature an “endless scroll” and continuous update of content as it arrives.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Designed front end to minimize connections and bandwidth</li>
-                        <li>Developed back end framework to process REST commands</li>
-                        <li>Created a CouchDB driver for PHP</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>CouchDB</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>AngularJS</li>
-                        <li>git</li>
-                    </ul>
-                </section>
+            <hr/>
+
+            <section id="objective"
+                     class="row">
+                <h2 class="col-md-3">Objective</h2>
+
+                <div class="col-md-9">
+                    <h3></h3>
+
+                    <p>{{ resume.objective }}</p>
+                </div>
             </section>
 
-            <section data-clear>
-                <header>
-                    <div>Web Developer, University of Central Florida</div>
-                    <div>Orlando, Florida — June 2011 – December 2012</div>
-                </header>
-                <section data-summary>
-                    <p>I was brought on to help develop the website for Icubed, then later to take over maintenance of the websites for YES and GEMS.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Developed the website for ICubed</li>
-                        <li>Maintained the website for YES and GEMS</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>MySql</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>git</li>
-                    </ul>
-                </section>
+            <section id="experience"
+                     class="row">
+                <h2 class="col-md-3">Experience</h2>
+
+                <div class="col-md-9">
+                    <div class="row"
+                         data-ng-repeat="experience in resume.experiences"
+                         data-ng-show="experience.publish">
+                        <div class="col-md-12">
+                            <h3>{{ experience.title }}, {{ experience.organization }}</h3>
+                            <em>
+                                {{ experience.city }}, {{ experience.state }};
+                                {{ experience.from }} &mdash; {{ experience.to }}
+                            </em>
+
+                            <p>{{ experience.description }}</p>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li data-ng-repeat="accomplishment in experience.accomplishments">
+                                    {{ accomplishment }}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Skills</h4>
+                            <span data-ng-repeat="skill in experience.skills">
+                                <span class="badge">{{ skill }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <header>
-                    <div>Web Developer, AKT Enterprises</div>
-                    <div>Orlando, Florida — November 2010 – June 2011</div>
-                </header>
-                <section data-summary>
-                    <p>AKT specializes in marketing and promotions for bands and brands. My tasks were to implement and update the content management systems for a wide variety of clients.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Created mintees.com; from start to finish within a four week deadline</li>
-                        <li>Worked on several Content Management Systems for clients.</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>jQuery</li>
-                        <li>git</li>
-                    </ul>
-                </section>
+            <section id="projects"
+                     class="row">
+                <h2 class="col-md-3">Projects</h2>
+
+                <div class="col-md-9">
+                    <div class="row"
+                         data-ng-repeat="project in resume.projects"
+                         data-ng-show="project.publish">
+                        <div class="col-md-12">
+                            <h3>{{ project.title }}</h3>
+
+                            <p>{{ project.description }}</p>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li data-ng-repeat="accomplishment in project.accomplishments">
+                                    {{ accomplishment }}
+                                </li>
+                            </ul>
+
+                            <h4>Resources</h4>
+                            <ul>
+                                <li data-ng-repeat="resource in project.resources">
+                                    {{ resource.type }}: <a href="{{ resource.location }}">{{ resource.location }}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h4>Skills</h4>
+                            <span data-ng-repeat="skill in project.skills">
+                                <span class="badge">{{ skill }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <header>
-                    <div>Software Developer, Centrix Networks</div>
-                    <div>Orlando, Florida — May 2010 – November 2010</div>
-                </header>
-                <section data-summary>
-                    <p>Centrix Networks is a VoIP telephony provider for Orlando, Florida. My main purpose was to create a portal for the technical support team to organize emails and keep track of phone calls in regards to support tickets.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Developed a portal for technical support to organize communications between the tech support team and customers</li>
-                        <li>Created a module that imported emails into the system</li>
-                        <li>Maintained the company's main website</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>jQuery</li>
-                        <li>git</li>
-                    </ul>
-                </section>
+            <section id="education"
+                     class="row">
+                <h2 class="col-md-3">Education</h2>
+
+                <div class="col-md-9">
+                    <div class="row"
+                         data-ng-repeat="education in resume.education">
+                        <div class="col-md-12">
+                            <h3>{{ education.title }}, {{ education.organization }}</h3>
+                            <em>
+                                {{ education.city }}, {{ education.state }};
+                                {{ education.to }}
+                            </em>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <li data-ng-repeat="accomplishment in education.accomplishments">
+                                    {{ accomplishment }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <header>
-                    <div>Website Administrator, Volunteers in Florida</div>
-                    <div>Orlando, Florida — January 2008 – December 2009</div>
-                </header>
-                <section data-summary>
-                    <p>Hired to maintain the organization’s internal database and website.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Resolved long standing bugs by previous developers</li>
-                        <li>Doubled as network admin for network and computer issues.</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </section>
+            <section id="skills"
+                     class="row">
+                <h2 class="col-md-3">Skills</h2>
+
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6"
+                             data-ng-repeat="skill in resume.skills">
+                            <h3>{{ skill.title }}</h3>
+                            <ul>
+                                <li data-ng-repeat="value in skill.values">{{ value }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <header>
-                    <div>Software Developer, Total Custom Solutions</div>
-                    <div>Cape Coral, Florida — August 2003 – December 2006</div>
-                </header>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Designed and maintained databases for multiple clients</li>
-                        <li>Coded custom modules for databases depending on client's requests</li>
-                        <li>Created server and client applications for various users</li>
-                        <li>Completed websites abandoned from previous developers</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>VBA</li>
-                        <li>Access</li>
-                        <li>VB6</li>
-                        <li>ASP</li>
-                    </ul>
-                </section>
-            </section>
-            <section>
-                <header>
-                    <div>Computer & Network Technician, Chemisus Inc.</div>
-                    <div>Fort Myers, Florida — August 2003 – December 2006</div>
-                </header>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Made house calls to provide services for computer and network issues.</li>
-                        <li>Tutored clients on the use of cameras, printers and software programs.</li>
-                    </ul>
-                </section>
-            </section>
-        </section>
+            <section id="skills"
+                     class="row">
+                <h2 class="col-md-3">Skills</h2>
 
-        <section id="personal">
-            <header>
-                <div>Other Experience</div>
-            </header>
-            <section>
-                <header>
-                    <div>Web Developer, Theta Tau</div>
-                    <div>Orlando, Florida — August 2009 – December 2012</div>
-                </header>
-                <section data-summary>
-                    <p>Created the chapter's website and maintained it for several years til graduation. Even after graduation I still make occasional modifications to the website.</p>
-                </section>
-                <section data-accomplishments>
-                    <div>Accomplishments</div>
-                    <ul>
-                        <li>Created Slinpins (Dependency Injector),</li>
-                        <li>Developed Dragon (PHP Framework)</li>
-                        <li>Implemented Twitter's Bootstrap for a responsive design</li>
-                    </ul>
-                </section>
-                <section data-skills>
-                    <div>Skills Used</div>
-                    <ul>
-                        <li>PHP</li>
-                        <li>CouchDB</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>jQuery</li>
-                        <li>AngularJS</li>
-                        <li>git</li>
-                    </ul>
-                </section>
+                <div class="col-md-9">
+                    <div class="row">
+                        <h3></h3>
+                        <em>References can be provided on request.</em>
+                    </div>
+                </div>
+            </section>
+        </article>
 
-            </section>
-        </section>
-
-        <section id="education">
-            <header>
-                <div>Education</div>
-            </header>
-            <section>
-                <header>
-                    <div>Bachelor's of Computer Science, University of Central Florida</div>
-                    <div>Orlando, Florida — 2007 – 2012</div>
-                </header>
-                <div>Graduated Fall 2012</div>
-                <div>Bachelor’s Degree in Computer Science. GPA: 2.73/4.0</div>
-                <div>Associate’s Degree. GPA: 3.5/4.0</div>
-                <div>Member of Theta Tau, Professional Engineering Fraternity</div>
-                <div>Member of Phi Theta Kappa, Academic Honor Society</div>
-            </section>
-        </section>
-
-        <section id="skills">
-            <header>
-                <div>Skills</div>
-            </header>
-            <section>
-                <header>
-                    <div>Platforms</div>
-                </header>
-                <ul>
-                    <li>Fedora</li>
-                    <li>Ubuntu</li>
-                    <li>Android</li>
-                    <li>Windows 9x</li>
-                    <li>Windows 2000</li>
-                    <li>Windows XP</li>
-                    <li>Windows 7</li>
-                </ul>
-            </section>
-            <section>
-                <header>
-                    <div>Development</div>
-                </header>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>C#</li>
-                    <li>VB6</li>
-                    <li>VB.net</li>
-                    <li>Java</li>
-                    <li>ASP</li>
-                    <li>ASP.net</li>
-                    <li>PHP</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>AngularJS</li>
-                </ul>
-            </section>
-            <section>
-                <header>
-                    <div>Administration</div>
-                </header>
-                <ul>
-                    <li>MSSql</li>
-                    <li>MySql</li>
-                    <li>CouchDB</li>
-                    <li>Apache</li>
-                    <li>IIS</li>
-                    <li>PureFTP</li>
-                    <li>OpenSSH</li>
-                    <li>Gitolite</li>
-                    <li>cPanel</li>
-                    <li>phpMyAdmin</li>
-                </ul>
-            </section>
-            <section>
-                <header>
-                    <div>Tools</div>
-                </header>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>NetbeansSSH</li>
-                    <li>SFTP</li>
-                    <li>git</li>
-                </ul>
-            </section>
-
-        </section>
+        <div data-ng-hide="true">
+            # {{ resume.full_name }}<br/>
+            {{ resume.address.street }}<br/>
+            {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}<br/>
+            <br/>
+            ## Objective<br/>
+            {{ resume.objective }}<br/>
+            <br/>
+            ## Experience<br/>
+            <span data-ng-repeat="experience in resume.experiences">
+                ### {{ experience.title }}, {{ experience.organization }}<br/>
+                {{ experience.city }}, {{ experience.state }}<br />
+                {{ experience.from }} -- {{ experience.to }}<br />
+                #### Accomplishments<br />
+                <span data-ng-repeat="accomplishment in experience.accomplishments">
+                    * {{ accomplishment }}<br />
+                </span>
+                #### Skills<br />
+                <span data-ng-repeat="skill in experience.skills">
+                    * {{ skill }}<br />
+                </span>
+                <br />
+            </span>
+            <br/>
+            ## Projects<br/>
+            <br/>
+            ## Education<br/>
+            <br/>
+            ## Skills<br/>
+        </div>
     </body>
 </html>
+
+
