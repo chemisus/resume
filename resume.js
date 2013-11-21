@@ -42,11 +42,13 @@
                 ],
                 skills: [
                     'PHP',
+                    'PHPUnit',
                     'CouchDB',
                     'HTML5',
                     'CSS3',
                     'jQuery',
                     'AngularJS',
+                    'REST',
                     'git'
                 ]
             },
@@ -77,9 +79,11 @@
                 ],
                 skills: [
                     'PHP',
+                    'PHPUnit',
                     'MySql',
                     'HTML5',
                     'CSS3',
+                    'jQuery',
                     'AngularJS',
                     'git'
                 ]
