@@ -2,17 +2,17 @@
 <html data-ng-app="ResumeApp">
     <head>
         <title>Terrence Howard's Resume</title>
-        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css"
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
               rel="stylesheet"
               type="text/css"/>
-        <script src="/bower_components/angular/angular.min.js"></script>
-        <script src="/resume.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="resume.js"></script>
         <!--<link rel="stylesheet" type="text/css" href="resume.less" />-->
         <!--<script src="/less.js"></script>-->
         <!--<script src="/bower_components/lesscss/dist/less-1.4.2.min.js"></script>-->
     </head>
     <body>
-        <article class="container">
+        <article class="container"data-ng-hide="false">
             <header class="row">
                 <div class="col-md-4">
                     <h1>{{ resume.full_name }}</h1>
@@ -27,8 +27,9 @@
                     </address>
                 </div>
 
-                <div class="col-md-2 col-md-push-6">
+                <div class="col-md-3 col-md-push-5">
                     <img src="qrcode-resume.png"
+                         style="max-width: 6em;"
                          class="thumbnail"/>
                     <a href="{{ resume.linkedin }}">{{ resume.linkedin }}</a><br/>
                     <a href="{{ resume.github }}">{{ resume.github }}</a>
@@ -181,36 +182,63 @@
             </section>
         </article>
 
-        <div data-ng-hide="true">
-            # {{ resume.full_name }}<br/>
-            {{ resume.address.street }}<br/>
-            {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}<br/>
-            <br/>
-            ## Objective<br/>
-            {{ resume.objective }}<br/>
-            <br/>
-            ## Experience<br/>
-            <span data-ng-repeat="experience in resume.experiences">
-                ### {{ experience.title }}, {{ experience.organization }}<br/>
-                {{ experience.city }}, {{ experience.state }}<br />
-                {{ experience.from }} -- {{ experience.to }}<br />
-                #### Accomplishments<br />
-                <span data-ng-repeat="accomplishment in experience.accomplishments">
-                    * {{ accomplishment }}<br />
-                </span>
-                #### Skills<br />
-                <span data-ng-repeat="skill in experience.skills">
-                    * {{ skill }}<br />
-                </span>
-                <br />
-            </span>
-            <br/>
-            ## Projects<br/>
-            <br/>
-            ## Education<br/>
-            <br/>
-            ## Skills<br/>
-        </div>
+<pre data-ng-hide="true">
+# {{ resume.full_name }}
+* Address: {{ resume.address.street }} {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}
+* Phone: {{ resume.phone }}
+* Email: {{ resume.email }}
+
+## Objective
+{{ resume.objective }}
+
+## Experience
+<span data-ng-repeat="experience in resume.experiences">
+### {{ experience.title }}, {{ experience.organization }}
+{{ experience.city }}, {{ experience.state }}; {{ experience.from }} -- {{ experience.to }}
+
+{{ experience.description }}
+
+#### Skills
+<span data-ng-repeat="skill in experience.skills">`{{ skill }}` </span>
+
+#### Accomplishments
+<span data-ng-repeat="accomplishment in experience.accomplishments">
+* {{ accomplishment }}</span>
+
+----
+</span>
+
+## Projects
+<span data-ng-repeat="project in resume.projects">
+### {{ project.title }}
+
+{{ project.description }}
+
+#### Accomplishments
+<span data-ng-repeat="accomplishment in project.accomplishments">
+* {{ accomplishment }}
+</span>
+
+----
+</span>
+## Education
+<span data-ng-repeat="education in resume.education">
+### {{ education.title }}, {{ education.organization }}
+{{ education.to }}
+<span data-ng-repeat="accomplishment in education.accomplishments">
+* {{ accomplishment }}</span>
+
+</span>
+## Skills
+<span data-ng-repeat="skill in resume.skills">
+### {{ skill.title }}
+<span data-ng-repeat="value in skill.values">`{{ value }}` </span>
+
+</span>
+
+## References
+References can be provided on request.
+</pre>
     </body>
 </html>
 

@@ -230,8 +230,26 @@
         ],
         projects: [
             {
+                title: 'Knight Krawler',
+                description: 'A senior design project aimed at creating an electric mobile platform to turn wheelchairs into ATV\'s. I was asked to write the software to control the steering, platform lift, and motor functions. The project used an Arduino and C++.',
+                publish: true,
+                resources: [
+                    {
+                        type: 'website',
+                        location: 'http://knightkrawler.net'
+                    }
+                ],
+                accomplishments: [
+                    'Used an Arduino Mega to control motor and actuator functions.',
+                    'Developed code using C++'
+                ],
+                skills: [
+                    'Arduino', 'C++'
+                ]
+            },
+            {
                 title: 'Slinpin',
-                description: 'PHP Dependency Injection',
+                description: 'A PHP dependency injection container.',
                 publish: true,
                 resources: [
                     {
@@ -244,6 +262,8 @@
                     }
                 ],
                 accomplishments: [
+                    'Used PHP reflection to get parameter types and inject appropriate data.',
+                    'Developed unit tests with 100% code coverage.'
                 ],
                 skills: [
                     'PHP', 'PHPUnit'
@@ -280,6 +300,7 @@
                     }
                 ],
                 accomplishments: [
+                    'Implemented OpenAuth for Google.'
                 ],
                 skills: [
                     'PHP', 'PHPUnit'
@@ -300,6 +321,7 @@
                     }
                 ],
                 accomplishments: [
+                    'Implemented Authorize.Net payment gateway.'
                 ],
                 skills: [
                     'PHP', 'PHPUnit'
@@ -308,18 +330,15 @@
             {
                 title: 'Snuggie',
                 description: 'PHP CouchDB ODM',
-                publish: false,
+                publish: true,
                 resources: [
-                    {
-                        type: 'composer',
-                        location: 'https://packagist.org/packages/chemisus/snuggie'
-                    },
                     {
                         type: 'github',
                         location: 'http://github.com/chemisus/snuggie'
                     }
                 ],
                 accomplishments: [
+                    'Allows freeze and thaw capability when storing in a CouchDB database.',
                 ],
                 skills: [
                     'PHP', 'PHPUnit'
@@ -330,14 +349,6 @@
                 description: '',
                 publish: false,
                 resources: [
-                    {
-                        type: 'composer',
-                        location: 'https://packagist.org/packages/chemisus/slinpin'
-                    },
-                    {
-                        type: 'github',
-                        location: 'http://github.com/chemisus/slinpin'
-                    }
                 ],
                 accomplishments: [
                 ],
@@ -351,14 +362,6 @@
                 description: '',
                 publish: false,
                 resources: [
-                    {
-                        type: 'composer',
-                        location: 'https://packagist.org/packages/chemisus/slinpin'
-                    },
-                    {
-                        type: 'github',
-                        location: 'http://github.com/chemisus/slinpin'
-                    }
                 ],
                 accomplishments: [
                 ],
@@ -368,15 +371,18 @@
             },
             {
                 title: 'PS3board',
-                description: '',
+                description: 'Let\'s a user use a PS3 controller as a keyboard and mouse combination.',
                 publish: true,
                 resources: [
                     {
                         type: 'github',
-                        location: 'http://github.com/chemisus/slinpin'
+                        location: 'http://github.com/chemisus/ps3board'
                     }
                 ],
                 accomplishments: [
+                    'Right joystick can move the mouse.',
+                    'Pressing left and right joysticks will perform left and right mouse clicks.',
+                    'Combination of left joystick, and the four main buttons are mapped to almost the equivalent of a full keyboard.'
                 ],
                 skills: [
                     'C++'
@@ -387,10 +393,6 @@
                 description: '',
                 publish: false,
                 resources: [
-                    {
-                        type: 'composer',
-                        location: 'https://packagist.org/packages/chemisus/slinpin'
-                    },
                     {
                         type: 'github',
                         location: 'http://github.com/chemisus/slinpin'
