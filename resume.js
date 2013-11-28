@@ -247,17 +247,16 @@
                     }
                 ],
                 accomplishments: [
-                    'Developed the software to control the steering, platform lift, and motor functions.',
+                    'Developed the software in C++ to control the steering, platform lift, and drive functions.',
                     'Successfully implemented the Ackerman Steering Principle.',
-                    'Used an Arduino Mega to control motor and actuator functions.',
-                    'Developed code using C++'
+                    'Used an Arduino Uno and relays to control motor and linear actuator functions.',
                 ],
                 skills: [
                     'Arduino', 'C++'
                 ]
             },
             {
-                title: 'Slinpin',
+                title: 'Slinpin - Dependency Injection Container',
                 description: 'A PHP dependency injection container.',
                 publish: true,
                 resources: [
@@ -380,7 +379,7 @@
             },
             {
                 title: 'PS3board',
-                description: 'Let\'s a user use a PS3 controller as a keyboard and mouse combination.',
+                description: 'Allows a user to replace a keyboard and mouse with a PS3 controller.',
                 publish: true,
                 resources: [
                     {
@@ -389,9 +388,9 @@
                     }
                 ],
                 accomplishments: [
-                    'Right joystick can move the mouse.',
-                    'Pressing left and right joysticks will perform left and right mouse clicks.',
-                    'Combination of left joystick, and the four main buttons are mapped to almost the equivalent of a full keyboard.'
+                    'Programmed the right joystick to move the cursor, acting as a mouse.',
+                    'Assigned the left and right joysticks to perform left and right mouse clicks.',
+                    'Combined the left joystick and the four main buttons to simulate a keyboard.'
                 ],
                 skills: [
                     'C++'
