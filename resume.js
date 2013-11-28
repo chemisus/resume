@@ -34,7 +34,7 @@
                 from: 'February 2013',
                 to: 'Current',
                 description: 'Imgphile.com is a website that will allow its members to upload images and discuss with other members of the community. I am the lead developer for the project. The site will feature an “endless scroll” and continuous update of content as it arrives.',
-                publish: false,
+                publish: false && false,
                 accomplishments: [
                     'Designed front end to minimize connections and bandwidth',
                     'Developed back end framework to process REST commands',
@@ -241,6 +241,10 @@
                     {
                         type: 'website',
                         location: 'http://knightkrawler.net'
+                    },
+                    {
+                        type: 'github',
+                        location: 'https://github.com/chemisus/knightkrawler'
                     }
                 ],
                 accomplishments: [
@@ -345,7 +349,7 @@
                     'Allows freeze and thaw capability when storing in a CouchDB database.',
                 ],
                 skills: [
-                    'PHP', 'PHPUnit'
+                    'PHP', 'PHPUnit', 'CouchDB'
                 ]
             },
             {

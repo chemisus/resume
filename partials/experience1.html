@@ -1,0 +1,25 @@
+<div class="col-md-10">
+    <div class="row"
+         data-ng-repeat="experience in resume.experiences"
+         data-ng-show="experience.publish">
+        <div class="col-md-12">
+            <h3>{{ experience.title }}, {{ experience.organization }}</h3>
+
+            <p>{{ experience.description }}</p>
+        </div>
+        <div class="col-md-9">
+            <h4>Accomplishments</h4>
+            <ul>
+                <li data-ng-repeat="accomplishment in experience.accomplishments">
+                    {{ accomplishment }}
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4>Skills</h4>
+            <span data-ng-repeat="skill in experience.skills">
+                <span class="badge">{{ skill }}</span>
+            </span>
+        </div>
+    </div>
+</div>

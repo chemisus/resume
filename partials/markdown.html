@@ -1,0 +1,58 @@
+
+<pre data-ng-hide="true">
+# {{ resume.full_name }}
+* Address: {{ resume.address.street }} {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}
+* Phone: {{ resume.phone }}
+* Email: {{ resume.email }}
+
+## Objective
+{{ resume.objective }}
+
+## Experience
+<span data-ng-repeat="experience in resume.experiences">
+    ### {{ experience.title }}, {{ experience.organization }}
+    {{ experience.city }}, {{ experience.state }}; {{ experience.from }} -- {{ experience.to }}
+
+    {{ experience.description }}
+
+    #### Skills
+    <span data-ng-repeat="skill in experience.skills">`{{ skill }}` </span>
+
+    #### Accomplishments
+    <span data-ng-repeat="accomplishment in experience.accomplishments">
+        * {{ accomplishment }}</span>
+
+    ----
+</span>
+
+## Projects
+<span data-ng-repeat="project in resume.projects">
+    ### {{ project.title }}
+
+    {{ project.description }}
+
+    #### Accomplishments
+    <span data-ng-repeat="accomplishment in project.accomplishments">
+        * {{ accomplishment }}
+    </span>
+
+    ----
+</span>
+## Education
+<span data-ng-repeat="education in resume.education">
+    ### {{ education.title }}, {{ education.organization }}
+    {{ education.to }}
+    <span data-ng-repeat="accomplishment in education.accomplishments">
+        * {{ accomplishment }}</span>
+
+</span>
+## Skills
+<span data-ng-repeat="skill in resume.skills">
+    ### {{ skill.title }}
+    <span data-ng-repeat="value in skill.values">`{{ value }}` </span>
+
+</span>
+
+## References
+References can be provided on request.
+</pre>

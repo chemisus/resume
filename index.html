@@ -12,7 +12,8 @@
         <!--<script src="/bower_components/lesscss/dist/less-1.4.2.min.js"></script>-->
     </head>
     <body>
-        <article class="container"data-ng-hide="false">
+        <article class="container"
+                 data-ng-hide="false">
             <header class="row">
                 <div class="col-md-4">
                     <h1>{{ resume.full_name }}</h1>
@@ -27,59 +28,59 @@
                     </address>
                 </div>
 
-                <div class="col-md-3 col-md-push-5">
-                    <img src="qrcode-resume.png"
-                         style="max-width: 6em;"
-                         class="thumbnail"/>
-                    <a href="{{ resume.linkedin }}">{{ resume.linkedin }}</a><br/>
-                    <a href="{{ resume.github }}">{{ resume.github }}</a>
-                </div>
+                <!--<div class="col-md-3 col-md-push-5">-->
+                <!--<img src="qrcode-resume.png"-->
+                <!--style="max-width: 6em;"-->
+                <!--class="thumbnail"/>-->
+                <!--<a href="{{ resume.linkedin }}">{{ resume.linkedin }}</a><br/>-->
+                <!--<a href="{{ resume.github }}">{{ resume.github }}</a>-->
+                <!--</div>-->
             </header>
 
             <hr/>
 
             <section id="objective"
                      class="row">
-                <h2 class="col-md-3">Objective</h2>
+                <h2 class="col-md-2">Objective</h2>
 
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <h3></h3>
 
                     <p>{{ resume.objective }}</p>
                 </div>
             </section>
 
+            <div class="row">
+                <h2 class="col-md-2">Experience</h2>
+            </div>
+
             <section id="experience"
                      class="row">
-                <h2 class="col-md-3">Experience</h2>
+                <div data-ng-include="'partials/experience2.html'"></div>
+            </section>
 
-                <div class="col-md-9">
+            <section id="education"
+                     class="row">
+                <h2 class="col-md-2">Education</h2>
+
+                <div class="col-md-10">
                     <div class="row"
-                         data-ng-repeat="experience in resume.experiences"
-                         data-ng-show="experience.publish">
+                         data-ng-repeat="education in resume.education">
                         <div class="col-md-12">
-                            <h3>{{ experience.title }}, {{ experience.organization }}</h3>
+                            <h3>{{ education.title }}, {{ education.organization }}</h3>
                             <em>
-                                {{ experience.city }}, {{ experience.state }};
-                                {{ experience.from }} &mdash; {{ experience.to }}
+                                {{ education.city }}, {{ education.state }};
+                                {{ education.to }}
                             </em>
-
-                            <p>{{ experience.description }}</p>
                         </div>
 
                         <div class="col-md-9">
                             <h4>Accomplishments</h4>
                             <ul>
-                                <li data-ng-repeat="accomplishment in experience.accomplishments">
+                                <li data-ng-repeat="accomplishment in education.accomplishments">
                                     {{ accomplishment }}
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Skills</h4>
-                            <span data-ng-repeat="skill in experience.skills">
-                                <span class="badge">{{ skill }}</span>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -87,9 +88,9 @@
 
             <section id="projects"
                      class="row">
-                <h2 class="col-md-3">Projects</h2>
+                <h2 class="col-md-2">Projects</h2>
 
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="row"
                          data-ng-repeat="project in resume.projects"
                          data-ng-show="project.publish">
@@ -125,38 +126,11 @@
                 </div>
             </section>
 
-            <section id="education"
-                     class="row">
-                <h2 class="col-md-3">Education</h2>
-
-                <div class="col-md-9">
-                    <div class="row"
-                         data-ng-repeat="education in resume.education">
-                        <div class="col-md-12">
-                            <h3>{{ education.title }}, {{ education.organization }}</h3>
-                            <em>
-                                {{ education.city }}, {{ education.state }};
-                                {{ education.to }}
-                            </em>
-                        </div>
-
-                        <div class="col-md-9">
-                            <h4>Accomplishments</h4>
-                            <ul>
-                                <li data-ng-repeat="accomplishment in education.accomplishments">
-                                    {{ accomplishment }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section id="skills"
                      class="row">
-                <h2 class="col-md-3">Skills</h2>
+                <h2 class="col-md-2">Skills</h2>
 
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-6"
                              data-ng-repeat="skill in resume.skills">
@@ -169,9 +143,9 @@
                 </div>
             </section>
 
-            <section id="skills"
+            <section id="references"
                      class="row">
-                <h2 class="col-md-3">Skills</h2>
+                <h2 class="col-md-3">References</h2>
 
                 <div class="col-md-9">
                     <div class="row">
@@ -181,64 +155,6 @@
                 </div>
             </section>
         </article>
-
-<pre data-ng-hide="true">
-# {{ resume.full_name }}
-* Address: {{ resume.address.street }} {{ resume.address.city }}, {{ resume.address.state }} {{ resume.address.zip }}
-* Phone: {{ resume.phone }}
-* Email: {{ resume.email }}
-
-## Objective
-{{ resume.objective }}
-
-## Experience
-<span data-ng-repeat="experience in resume.experiences">
-### {{ experience.title }}, {{ experience.organization }}
-{{ experience.city }}, {{ experience.state }}; {{ experience.from }} -- {{ experience.to }}
-
-{{ experience.description }}
-
-#### Skills
-<span data-ng-repeat="skill in experience.skills">`{{ skill }}` </span>
-
-#### Accomplishments
-<span data-ng-repeat="accomplishment in experience.accomplishments">
-* {{ accomplishment }}</span>
-
-----
-</span>
-
-## Projects
-<span data-ng-repeat="project in resume.projects">
-### {{ project.title }}
-
-{{ project.description }}
-
-#### Accomplishments
-<span data-ng-repeat="accomplishment in project.accomplishments">
-* {{ accomplishment }}
-</span>
-
-----
-</span>
-## Education
-<span data-ng-repeat="education in resume.education">
-### {{ education.title }}, {{ education.organization }}
-{{ education.to }}
-<span data-ng-repeat="accomplishment in education.accomplishments">
-* {{ accomplishment }}</span>
-
-</span>
-## Skills
-<span data-ng-repeat="skill in resume.skills">
-### {{ skill.title }}
-<span data-ng-repeat="value in skill.values">`{{ value }}` </span>
-
-</span>
-
-## References
-References can be provided on request.
-</pre>
     </body>
 </html>
 
