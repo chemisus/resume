@@ -70,12 +70,11 @@
                     'Implemented responsive designs using CSS3 and Bootstrap based themes.',
                     'Created unit and integration tests to be ran by phpunit and phing.',
                     'Used composer to install, update, and load third party packages.',
-                    'Used Laravel 4 for the backend framework.',
-                    'Used AngularJS for the frontend framework.',
+                    'Used Laravel 4 for the backend and AngularJS for the frontend frameworks.',
                     'Frequently used pair programming strategies.',
                     'Developed using PhpStorm',
                     'Created a script that would generate classes to tie Laravel 4\'s facades and PhpStorm\'s autocomplete functionality.',
-                    'Performed as lead developer and coach; having in many cases to teach or explain concepts.'
+                    'Performed as lead developer and coach by mentoring or explaining concepts.'
                 ],
                 skills: [
                     'PHP',
@@ -96,11 +95,11 @@
                 state: 'Florida',
                 from: 'June 2011',
                 to: 'December 2012',
-                description: 'I was brought on to help develop the website for ICubed, then later to take over maintenance of the websites for YES and GEMS.',
+                description: 'I was brought on to help develop the website for Innovation through Institutional Integration (ICubed), then later to take over maintenance of the websites for Young Entrepreneur Scholarships (YES) and GEMS. ICubed is an outreach program pairs students from artistic and STEM majors collaborate to produce scientifically influenced art.',
                 publish: true,
                 accomplishments: [
                     'Developed the website for ICubed',
-                    'Maintained the website for YES and GEMS'
+                    'Maintained the websites for YES and GEMS'
                 ],
                 skills: [
                     'PHP',
