@@ -95,7 +95,7 @@
                 state: 'Florida',
                 from: 'June 2011',
                 to: 'December 2012',
-                description: 'I was brought on to help develop the website for Innovation through Institutional Integration (ICubed), then later to take over maintenance of the websites for Young Entrepreneur Scholarships (YES) and GEMS. ICubed is an outreach program pairs students from artistic and STEM majors collaborate to produce scientifically influenced art.',
+                description: 'I was brought on to help develop the website for Innovation through Institutional Integration (ICubed), then later to take over maintenance of the websites for Young Entrepreneur Scholarships (YES) and GEMS. ICubed is an program pairs students from artistic and STEM majors collaborate to produce scientifically influenced art.',
                 publish: true,
                 accomplishments: [
                     'Developed the website for ICubed',
@@ -115,7 +115,7 @@
                 state: 'Florida',
                 from: 'August 2009',
                 to: 'December 2012',
-                description: 'Created the chapter\'s website and maintained it for several years til graduation.Even after graduation I still make occasional modifications to the website.',
+                description: 'Created the chapter\'s website and maintained it for several years until graduation. I still make occasional modifications and mentor those currently in charge of it.',
                 publish: true,
                 accomplishments: [
                     'Created Slinpins (Dependency Injector)',
@@ -139,10 +139,10 @@
                 state: 'Florida',
                 from: 'November 2010',
                 to: 'June 2011',
-                description: 'AKT specializes in marketing and promotions for bands and brands.My tasks were to implement and update the content management systems for a wide variety of clients.',
+                description: 'AKT specializes in marketing and promotions for bands and brands.',
                 publish: true,
                 accomplishments: [
-                    'Created mintees.com; from start to finish within a four week deadline',
+                    'Created mintees.com from start to finish within a two week deadline',
                     'Worked on several Content Management Systems for clients.'
                 ],
                 skills: [
@@ -160,7 +160,7 @@
                 state: 'Florida',
                 from: 'May 2010',
                 to: 'November 2010',
-                description: 'Centrix Networks is a VoIP telephony provider for Orlando, Florida.My main purpose was to create a portal for the technical support team to organize emails and keep track of phone calls in regards to support tickets.',
+                description: 'Centrix Networks is a VoIP telephony provider for Orlando, Florida.',
                 publish: true,
                 accomplishments: [
                     'Developed a portal for technical support to organize communications',
@@ -182,7 +182,7 @@
                 state: 'Florida',
                 from: 'January 2008',
                 to: 'December 2009',
-                description: 'Hired to maintain the organization\'s internal database and website.',
+                description: 'Volunteers in Florida is a nonprofit organization that sends volunteers to help in social work, shelters, health care, food banks, legal services, teaching, working with farm workers, senior citizens and in other fields.',
                 publish: true,
                 accomplishments: [
                     'Resolved long standing bugs by previous developers',
@@ -224,8 +224,8 @@
                 to: 'December 2006',
                 publish: true,
                 accomplishments: [
-                    'Made house calls to provide services for computer and network issues.',
-                    'Tutored clients on the use of cameras, printers and software programs.'
+                    'Responded to house calls to provide services for computer and network issues.',
+                    'Tutored clients, mostly seniors, on the use of cameras, printers and software programs.'
                 ],
                 skills: [
                 ]
@@ -233,8 +233,8 @@
         ],
         projects: [
             {
-                title: 'Knight Krawler',
-                description: 'A senior design project aimed at creating an electric mobile platform to turn wheelchairs into ATV\'s. I was asked to write the software to control the steering, platform lift, and motor functions. The project used an Arduino and C++.',
+                title: 'Knight Krawler - ATV Wheelchair Attachment',
+                description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
                 publish: true,
                 resources: [
                     {
@@ -247,6 +247,8 @@
                     }
                 ],
                 accomplishments: [
+                    'Developed the software to control the steering, platform lift, and motor functions.',
+                    'Successfully implemented the Ackerman Steering Principle.',
                     'Used an Arduino Mega to control motor and actuator functions.',
                     'Developed code using C++'
                 ],
@@ -461,6 +463,7 @@
                 state: 'Florida',
                 to: 'Fall 2012',
                 accomplishments: [
+                    'Graduated Fall 2012',
                     'Member of Theta Tau, Professional Engineering Fraternity',
                     'Member of Phi Theta Kappa, Academic Honor Society'
                 ]
