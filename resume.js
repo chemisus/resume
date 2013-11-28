@@ -99,7 +99,7 @@
                 publish: true,
                 accomplishments: [
                     'Developed the website for ICubed',
-                    'Maintained the websites for YES and GEMS'
+                    'Maintained the websites for outreach programs YES and GEMS'
                 ],
                 skills: [
                     'PHP',
