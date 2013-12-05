@@ -523,4 +523,94 @@
             }
         ]
     });
+
+    resume.directive(
+        'resume',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '' +
+                        '<div data-resume-header></div>' +
+                        '<div data-resume-objective></div>' +
+                        '<div data-resume-experience></div>' +
+                        '<div data-resume-education></div>' +
+                        '<div data-resume-projects></div>' +
+                        '<div data-resume-skills></div>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeHeader',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>{{ resume.full_name }}</h1>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeObjective',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>Objective</h1>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeExperience',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>Experience</h1>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeEducation',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>Education</h1>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeProjects',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>Projects</h1>'
+                };
+            }
+        ]
+    );
+
+    resume.directive(
+        'resumeSkills',
+        [
+            function () {
+                return {
+                    replace: true,
+                    template: '<h1>Skills</h1>'
+                };
+            }
+        ]
+    );
 })();
