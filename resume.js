@@ -142,7 +142,9 @@
                 description: 'AKT specializes in marketing and promotions for bands and brands.',
                 publish: true,
                 accomplishments: [
-                    'Created mintees.com from start to finish within a two week deadline',
+                    'Recreated a site that had announced it was closing in a three week period',
+                    'Created bash scripts to import all content from the closing site',
+                    'Implemented a method for users to claim their account on the new site',
                     'Worked on several Content Management Systems for clients.'
                 ],
                 skills: [
