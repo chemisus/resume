@@ -1,5 +1,28 @@
 (function () {
-    var resume = angular.module('ResumeApp', []);
+    var resume = angular.module('ResumeApp', ['ngRoute']);
+
+    resume.config(
+        [
+            '$routeProvider',
+            function ($routeProvider) {
+                $routeProvider.when('/', {
+                    templateUrl: '/partials/web.html'
+                });
+
+                $routeProvider.when('/text', {
+                    templateUrl: '/partials/text.html'
+                });
+
+                $routeProvider.when('/print', {
+                    templateUrl: '/partials/print.html'
+                });
+
+                $routeProvider.otherwise({
+
+                });
+            }
+        ]
+    );
 
     resume.run(
         [
@@ -28,13 +51,37 @@
         objective: 'I intend to employ my experience as a software developer in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve a respectable organization with my dedication & extensive experience and interested to build a long term career.',
         experiences: [
             {
+                title: 'Software Developer',
+                organization: 'Promo Only',
+                city: 'Orlando',
+                state: 'Florida',
+                from: 'January 2014',
+                to: 'Current',
+                description: '',
+                publish: false,
+                accomplishments: [
+
+                ],
+                skills: [
+                    'PHP',
+                    'PHPUnit',
+                    'Postgres Sql',
+                    'HTML5',
+                    'CSS3',
+                    'jQuery',
+                    'AngularJS',
+                    'REST',
+                    'git'
+                ]
+            },
+            {
                 title: 'Web Developer & Owner, imgphile.com',
                 city: 'Orlando',
                 state: 'Florida',
                 from: 'February 2013',
                 to: 'Current',
                 description: 'Imgphile.com is a website that will allow its members to upload images and discuss with other members of the community. I am the lead developer for the project. The site will feature an “endless scroll” and continuous update of content as it arrives.',
-                publish: false && false,
+                publish: false,
                 accomplishments: [
                     'Designed front end to minimize connections and bandwidth',
                     'Developed back end framework to process REST commands',
@@ -356,8 +403,8 @@
             },
             {
                 title: 'Android Presentation',
-                description: '',
-                publish: false,
+                description: 'Includes a client which runs on an android device, and a server running on a computer with powerpoint. The client can control the server and move the presentation forward/backwards, and the server will send a screenshot to the client so that the presenter knows which slide he is on without having to turn around and look at the screen.',
+                publish: true,
                 resources: [
                 ],
                 accomplishments: [
@@ -400,8 +447,8 @@
             },
             {
                 title: 'Awesome Defense',
-                description: '',
-                publish: false,
+                description: 'A multiplayer android tower defense game. Developed both the clients running on android devices, and the server in java which ran on a laptop.',
+                publish: true,
                 resources: [
                     {
                         type: 'github',
@@ -462,9 +509,9 @@
                 organization: 'University of Central Florida',
                 city: 'Orlando',
                 state: 'Florida',
+                from: 'Spring 2007',
                 to: 'Fall 2012',
                 accomplishments: [
-                    'Graduated Fall 2012',
                     'Member of Theta Tau, Professional Engineering Fraternity',
                     'Member of Phi Theta Kappa, Academic Honor Society'
                 ]
@@ -615,4 +662,25 @@
             }
         ]
     );
+
+    resume.filter(
+        'implode',
+        [
+            function () {
+                return function (array, glue) {
+                    var value = '';
+
+                    for (var i = 0; i < array.length - 1; i++) {
+                        value += array[i] + glue;
+                    }
+
+                    if (array.length > 0) {
+                        value += array[array.length - 1];
+                    }
+
+                    return value;
+                };
+            }
+        ]
+    )
 })();
