@@ -1,4 +1,27 @@
-angular.module('App', ['ngRoute'])
+angular.module('App', [
+        'ngRoute',
+        'contact.value',
+        'objective.value',
+        'experiences.value',
+        'educations.value',
+        'projects.value',
+        'skills.value'
+    ])
+    .config(function ($routeProvider) {
+        $routeProvider.otherwise({
+            templateUrl: 'assets/html/resume/default.html'
+        });
+    })
+    .run(function ($rootScope, contact, objective, experiences, educations, projects, skills) {
+        $rootScope.contact = contact;
+        $rootScope.objective = objective;
+        $rootScope.experiences = experiences;
+        $rootScope.educations = educations;
+        $rootScope.projects = projects;
+        $rootScope.skills = skills;
+    })
+;
+;angular.module('contact.value', [])
     .value('contact', {
         full_name: 'Terrence Howard',
         title: 'Software Developer',
@@ -14,10 +37,29 @@ angular.module('App', ['ngRoute'])
         linkedin: 'http://lnkd.in/FU-9EV',
         github: 'http://github.com/chemisus'
     })
-    .value('objective', 'I intend to employ my experience as a software developer in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve a respectable organization with my dedication & extensive experience and interested to build a long term career.')
+;
+;angular.module('educations.value', [])
+    .value('educations', [
+        {
+            title: 'Bachelor\'s of Computer Science',
+            organization: 'University of Central Florida',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'Spring 2007',
+            to: 'Fall 2012',
+            publish: true,
+            description: '',
+            accomplishments: [
+                'Member of Theta Tau, Professional Engineering Fraternity',
+                'Member of Phi Theta Kappa, Academic Honor Society'
+            ]
+        }
+    ])
+;
+;angular.module('experiences.value', [])
     .value('experiences', [
         {
-            title: 'Software Engineer',
+            position: 'Software Engineer',
             organization: 'Fodszqu',
             city: 'Orlando',
             state: 'Florida',
@@ -35,12 +77,12 @@ angular.module('App', ['ngRoute'])
                 'Constructed the site using PHP, Laravel, and CouchDB',
                 'Created integration tests to ensure that the site\'s api works as intended',
                 'Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, along with sending and retrieving messages via curl.',
-                'Currently implementing a process to accept bitcoin payments from users who need to store large files'
+                'Implemented a process to accept bitcoin payments for amounts depending on message sizes'
             ],
             keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
         },
         {
-            title: 'Software Developer',
+            position: 'Software Developer',
             organization: 'Promo Only',
             city: 'Orlando',
             state: 'Florida',
@@ -56,7 +98,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'PHPUnit', 'Postgres Sql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
         {
-            title: 'Web Developer & Owner',
+            position: 'Web Developer & Owner',
             organization: 'imgphile.com',
             city: 'Orlando',
             state: 'Florida',
@@ -72,7 +114,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'PHPUnit', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
         {
-            title: 'Senior Developer',
+            position: 'Senior Developer',
             organization: 'Xulon Press',
             city: 'Orlando',
             state: 'Florida',
@@ -94,7 +136,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'PHPUnit', 'MySql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         },
         {
-            title: 'Web Developer',
+            position: 'Web Developer',
             organization: 'University of Central Florida',
             city: 'Orlando',
             state: 'Florida',
@@ -109,7 +151,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'MySql', 'HTML5', 'CSS3', 'git']
         },
         {
-            title: 'Web Developer',
+            position: 'Web Developer',
             organization: 'Theta Tau',
             city: 'Orlando',
             state: 'Florida',
@@ -125,7 +167,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         },
         {
-            title: 'Web Developer',
+            position: 'Web Developer',
             organization: 'AKT Enterprises',
             city: 'Orlando',
             state: 'Florida',
@@ -142,7 +184,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'HTML5', 'CSS3', 'jQuery', 'git']
         },
         {
-            title: 'Software Developer',
+            position: 'Software Developer',
             organization: 'Centrix Networks',
             city: 'Orlando',
             state: 'Florida',
@@ -158,7 +200,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'HTML', 'CSS', 'jQuery', 'git']
         },
         {
-            title: 'Website Administrator',
+            position: 'Website Administrator',
             organization: 'Volunteers in Florida',
             city: 'Orlando',
             state: 'Florida',
@@ -173,7 +215,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['PHP', 'HTML', 'CSS']
         },
         {
-            title: 'Software Developer',
+            position: 'Software Developer',
             organization: 'Total Custom Solutions',
             city: 'Cape Coral',
             state: 'Florida',
@@ -190,7 +232,7 @@ angular.module('App', ['ngRoute'])
             keywords: ['VBA', 'Access', 'VB6', 'ASP']
         },
         {
-            title: 'Computer & Network Technician',
+            position: 'Computer & Network Technician',
             organization: 'Chemisus Inc.',
             city: 'Fort Myers',
             state: 'Florida',
@@ -206,6 +248,11 @@ angular.module('App', ['ngRoute'])
             ]
         }
     ])
+;
+;angular.module('objective.value', [])
+    .value('objective', 'I intend to employ my experience as a software developer in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve a respectable organization with my dedication & extensive experience and interested to build a long term career.')
+;
+;angular.module('projects.value', [])
     .value('projects', [
         {
             title: 'Knight Krawler - ATV Wheelchair Attachment',
@@ -409,22 +456,8 @@ angular.module('App', ['ngRoute'])
             ]
         }
     ])
-    .value('educations', [
-        {
-            title: 'Bachelor\'s of Computer Science',
-            organization: 'University of Central Florida',
-            city: 'Orlando',
-            state: 'Florida',
-            from: 'Spring 2007',
-            to: 'Fall 2012',
-            publish: true,
-            description: '',
-            accomplishments: [
-                'Member of Theta Tau, Professional Engineering Fraternity',
-                'Member of Phi Theta Kappa, Academic Honor Society'
-            ]
-        }
-    ])
+;
+;angular.module('skills.value', [])
     .value('skills', [
         {
             title: 'Administration',
@@ -479,131 +512,4 @@ angular.module('App', ['ngRoute'])
             ]
         }
     ])
-    .directive('contact', function (contact) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>' + contact.full_name + '</h1>' +
-                '</section>'
-        };
-    })
-    .directive('objective', function (objective) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>Objective</h1>' +
-                '<p>' + objective + '</p>' +
-                '</section>'
-        };
-    })
-    .directive('experience', function (experiences) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>Experience</h1>' +
-                experiences.filter(function (experience) {
-                    return experience.publish;
-                }).map(function (experience) {
-                    return '<section>' +
-                        '<h1>' + experience.title + ', ' + experience.organization + '</h1>' +
-                        '<div>' + experience.city + ', ' + experience.state + '</div>' +
-                        '<div>' + experience.from + ' - ' + experience.to + '</div>' +
-                        '<p>' + experience.description + '</p>' +
-                        '<section data-accomplishments>' +
-                        '<h1>Accomplishments</h1>' +
-                        '<ul>' +
-                        experience.accomplishments.map(function (value) {
-                            return '<li>' + value + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>' +
-                        '<section data-keywords>' +
-                        '<h1>Keywords</h1>' +
-                        '<ul>' +
-                        experience.keywords.map(function (value) {
-                            return '<li>' + value + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>' +
-                        '</section>';
-                }).join('') +
-                '</section>'
-        };
-    })
-    .directive('education', function (educations) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>Education</h1>' +
-                educations.filter(function (education) {
-                    return education.publish;
-                }).map(function (education) {
-                    return '<section>' +
-                        '<h1>' + education.title + ', ' + education.organization + '</h1>' +
-                        '<div>' + education.city + ', ' + education.state + '</div>' +
-                        '<div>' + education.from + ' - ' + education.to + '</div>' +
-                        '<p>' + education.description + '</p>' +
-                        '<section data-accomplishments>' +
-                        '<h1>Accomplishments</h1>' +
-                        '<ul>' +
-                        education.accomplishments.map(function (value) {
-                            return '<li>' + value + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>' +
-                        '</section>';
-                }).join('') +
-                '</section>'
-        };
-    })
-    .directive('projects', function (projects) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>Projects</h1>' +
-                projects.filter(function (project) {
-                    return project.publish;
-                }).map(function (project) {
-                    return '<section>' +
-                        '<h1>' + project.title + '</h1>' +
-                        '<p>' + project.description + '</p>' +
-                        '<section data-accomplishments>' +
-                        '<h1>Accomplishments</h1>' +
-                        '<ul>' +
-                        project.accomplishments.map(function (value) {
-                            return '<li>' + value + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>' +
-                        '<section data-keywords>' +
-                        '<h1>Keywords</h1>' +
-                        '<ul>' +
-                        project.keywords.map(function (value) {
-                            return '<li>' + value + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>' +
-                        '</section>';
-                }).join('') +
-                '</section>'
-        };
-    })
-    .directive('skills', function (skills) {
-        return {
-            replace: true,
-            template: '<section>' +
-                '<h1>Skills</h1>' +
-                skills.map(function (category) {
-                    return '<section>' +
-                        '<h1>' + category.title + '</h1>' +
-                        '<ul>' +
-                        category.values.map(function (skill) {
-                            return '<li>' + skill + '</li>';
-                        }).join('') +
-                        '</ul>' +
-                        '</section>';
-                }).join('') +
-                '</section>'
-        };
-    })
 ;
