@@ -35,7 +35,7 @@ angular.module('App', ['ngRoute'])
                 'Constructed the site using PHP, Laravel, and CouchDB',
                 'Created integration tests to ensure that the site\'s api works as intended',
                 'Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, along with sending and retrieving messages via curl.',
-                'Currently implementing a process to accept bitcoin payments from users who need to store large files'
+                'Implemented a process to accept bitcoin payments for amounts depending on message sizes'
             ],
             keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
         },
