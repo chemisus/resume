@@ -3,78 +3,134 @@
 <link href="assets/css/resume.css" rel="stylesheet" type="text/css"/>
 <article data-resume-default>
     <section data-contact>
-        <h1>{{ contact.full_name }}</h1>
-        {{ contact.title }}
-        <address data-address>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.state }} {{ contact.address.zip }}</address>
-        <address data-phone>{{ contact.phone }}</address>
-        <address data-email>{{ contact.email }}</address>
+        <div class="row">
+            <div class="columns small-12">
+                <h1>{{ contact.full_name }}</h1>
+                {{ contact.title }}
+                <address data-address>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.state }} {{ contact.address.zip }}</address>
+                <address data-phone>{{ contact.phone }}</address>
+                <address data-email>{{ contact.email }}</address>
+            </div>
+        </div>
     </section>
 
     <section data-objective>
-        <h2>Objective</h2>
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Objective</h2>
 
-        <p>{{ objective }}</p>
+                <p>{{ objective }}</p>
+            </div>
+        </div>
     </section>
 
     <section data-experiences>
-        <h2>Experience</h2>
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Experience</h2>
+            </div>
+        </div>
         <section data-ng-repeat="experience in experiences">
-            <h3>
-                <span data-organization>{{ experience.organization }}</span>,
-                <span data-position>{{ experience.position }}</span>
-            </h3>
+            <div class="row">
+                <h3 class="columns small-12">
+                    <span data-organization>{{ experience.organization }}</span>,
+                    <span data-position>{{ experience.position }}</span>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="columns small-3">
+                    <h4>Summary</h4>
 
-            <p>{{ experience.description }}</p>
-            <h4>Accomplishments</h4>
-            <ul>
-                <li data-ng-repeat="value in experience.accomplishments">{{ value }}</li>
-            </ul>
-            <h4>Keywords</h4>
-            <ul>
-                <li data-ng-repeat="value in experience.keywords">{{ value }}</li>
-            </ul>
+                    <p>{{ experience.description }}</p>
+                </div>
+                <div class="columns small-6">
+                    <h4>Accomplishments</h4>
+                    <ul>
+                        <li data-ng-repeat="value in experience.accomplishments">{{ value }}</li>
+                    </ul>
+                </div>
+                <div class="columns small-3">
+                    <h4>Keywords</h4>
+                    <ul>
+                        <li data-ng-repeat="value in experience.keywords">{{ value }}</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </section>
 
     <section data-education>
-        <h2>Education</h2>
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Education</h2>
+            </div>
+        </div>
         <section data-ng-repeat="education in educations">
-            <h3>
-                <span data-organization>{{ education.organization }}</span>,
-                <span data-position>{{ education.degree }}</span>
-            </h3>
+            <div class="row">
+                <div class="columns small-12">
+                    <h3>
+                        <span data-organization>{{ education.organization }}</span>,
+                        <span data-position>{{ education.degree }}</span>
+                    </h3>
+                </div>
+            </div>
         </section>
     </section>
 
     <section data-projects>
-        <h2>Projects</h2>
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Projects</h2>
+            </div>
+        </div>
         <section data-ng-repeat="project in projects">
-            <h3>
-                <span data-title>{{ project.title }}</span>
-            </h3>
+            <div class="row">
+                <div class="columns small-12">
+                    <h3>
+                        <span data-title>{{ project.title }}</span>
+                    </h3>
+                </div>
+            </div>
 
-            <p>{{ project.description }}</p>
-            <h4>Accomplishments</h4>
-            <ul>
-                <li data-ng-repeat="value in project.accomplishments">{{ value }}</li>
-            </ul>
-            <h4>Keywords</h4>
-            <ul>
-                <li data-ng-repeat="value in project.keywords">{{ value }}</li>
-            </ul>
+            <div class="row">
+                <div class="columns small-3">
+                    <h4>Summary</h4>
+
+                    <p>{{ project.description }}</p>
+                </div>
+                <div class="columns small-6">
+                    <h4>Accomplishments</h4>
+                    <ul>
+                        <li data-ng-repeat="value in project.accomplishments">{{ value }}</li>
+                    </ul>
+                </div>
+                <div class="columns small-3">
+                    <h4>Keywords</h4>
+                    <ul>
+                        <li data-ng-repeat="value in project.keywords">{{ value }}</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </section>
 
     <section data-skills>
-        <h2>Skills</h2>
-        <section data-ng-repeat="category in skills">
-            <h3>
-                <span data-category>{{ category.title }}</span>
-            </h3>
-
-            <ul>
-                <li data-ng-repeat="value in category.values">{{ value }}</li>
-            </ul>
-        </section>
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Skills</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-12">
+                <section data-ng-repeat="category in skills">
+                    <h3>
+                        <span data-category>{{ category.title }}</span>
+                    </h3>
+                    <ul>
+                        <li data-ng-repeat="value in category.values">{{ value }}</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </section>
 </article>
