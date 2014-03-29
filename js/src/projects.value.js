@@ -1,6 +1,66 @@
 angular.module('projects.value', [])
     .value('projects', [
         {
+            title: 'fodszqu.com',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'September 2013',
+            to: 'Current',
+            description: 'Fodszqu is a site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.',
+            publish: true,
+            resources: [
+                {
+                    type: 'github',
+                    location: 'http://github.com/chemisus/fodszqu'
+                }
+            ],
+            accomplishments: [
+                'Constructed the site using PHP, Laravel, and CouchDB',
+                'Created integration tests to ensure that the site\'s api works as intended',
+                'Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, along with sending and retrieving messages via curl.',
+                'Implemented a process to accept bitcoin payments for amounts depending on message sizes'
+            ],
+            keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
+        },
+        {
+            title: 'gymbrute.com',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'September 2013',
+            to: 'Current',
+            description: '',
+            publish: true,
+            resources: [],
+            accomplishments: [],
+            keywords: []
+        },
+        {
+            title: 'imgphile.com',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'February 2013',
+            to: 'Current',
+            description: 'Imgphile.com is a website that will allow its members to upload images and discuss with other members of the community. I am the lead developer for the project. The site will feature an “endless scroll” and continuous update of content as it arrives.',
+            publish: false,
+            accomplishments: [
+                'Designed front end to minimize connections and bandwidth',
+                'Developed back end framework to process REST commands',
+                'Created a CouchDB driver for PHP'
+            ],
+            keywords: ['PHP', 'PHPUnit', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
+        },
+        {
+            title: 'projx.io',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'February 2013',
+            to: 'Current',
+            description: '',
+            publish: false,
+            accomplishments: [],
+            keywords: []
+        },
+        {
             title: 'Knight Krawler - ATV Wheelchair Attachment',
             description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
             publish: true,
