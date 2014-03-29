@@ -8,6 +8,10 @@ angular.module('App', [
         'skills.value'
     ])
     .config(function ($routeProvider) {
+        $routeProvider.when('/text', {
+            templateUrl: 'assets/html/resume/text.html'
+        });
+
         $routeProvider.otherwise({
             templateUrl: 'assets/html/resume/default.html'
         });

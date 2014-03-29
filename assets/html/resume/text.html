@@ -1,0 +1,77 @@
+<article data-resume-text>
+    <div>{{ contact.full_name }}</div>
+    <div data-address>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.state }} {{ contact.address.zip }}</div>
+    <div data-phone>{{ contact.phone }}</div>
+    <div data-email>{{ contact.email }}</div>
+    <br>
+
+    <div>{{ contact.title }}</div>
+    <br><br>
+
+    <div>OBJECTIVE</div>
+    <br>
+
+    <div>{{ objective }}</div>
+    <br><br><br>
+
+    <div>EXPERIENCE</div>
+    <br>
+
+    <div data-ng-repeat="experience in experiences | filter:{publish:true}">
+        <div>{{ ($index + 1) }}. {{ experience.organization }}, {{ experience.position }}</div>
+        <div>{{ experience.description }}</div>
+        <br>
+
+        <div>Keywords</div>
+        <div>
+            <span data-ng-repeat="value in experience.keywords">{{ $index > 0 ? ',' : '' }} {{ value }}</span>
+        </div>
+        <br>
+
+        <div>Accomplishments</div>
+        <div data-ng-repeat="value in experience.accomplishments">&nbsp;&bullet; {{ value }}</div>
+        <br>
+    </div>
+    <br><br>
+
+    <div>EDUCATION</div>
+    <br>
+
+    <div data-ng-repeat="education in educations">
+        <div>{{ ($index + 1) }}. {{ education.organization }}, {{ education.degree }}</div>
+        <br/>
+    </div>
+    <br><br>
+
+    <div>PROJECTS</div>
+    <br>
+
+    <div data-ng-repeat="project in projects">
+        <div data-title>{{ ($index + 1) }}. {{ project.title }}</div>
+
+        <div>{{ project.description }}</div>
+        <br>
+
+        <div>Keywords</div>
+        <div>
+            <span data-ng-repeat="value in project.keywords">{{ $index > 0 ? ',' : '' }} {{ value }}</span>
+        </div>
+        <br>
+
+        <div>Accomplishments</div>
+        <div data-ng-repeat="value in project.accomplishments">&nbsp;&bullet; {{ value }}</div>
+        <br>
+    </div>
+    <br><br>
+
+    <div>SKILLS</div>
+    <br>
+
+    <div data-ng-repeat="category in skills">
+        <div data-category>{{ ($index + 1) }}. {{ category.title }}</div>
+        <div>
+            <span data-ng-repeat="value in category.values">{{ $index > 0 ? ',' : '' }} {{ value }}</span>
+        </div>
+        <br>
+    </div>
+</article>

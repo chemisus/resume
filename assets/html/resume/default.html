@@ -1,0 +1,80 @@
+<link href="vendor/foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="vendor/foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/resume.css" rel="stylesheet" type="text/css"/>
+<article data-resume-default>
+    <section data-contact>
+        <h1>{{ contact.full_name }}</h1>
+        {{ contact.title }}
+        <address data-address>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.state }} {{ contact.address.zip }}</address>
+        <address data-phone>{{ contact.phone }}</address>
+        <address data-email>{{ contact.email }}</address>
+    </section>
+
+    <section data-objective>
+        <h2>Objective</h2>
+
+        <p>{{ objective }}</p>
+    </section>
+
+    <section data-experiences>
+        <h2>Experience</h2>
+        <section data-ng-repeat="experience in experiences">
+            <h3>
+                <span data-organization>{{ experience.organization }}</span>,
+                <span data-position>{{ experience.position }}</span>
+            </h3>
+
+            <p>{{ experience.description }}</p>
+            <h4>Accomplishments</h4>
+            <ul>
+                <li data-ng-repeat="value in experience.accomplishments">{{ value }}</li>
+            </ul>
+            <h4>Keywords</h4>
+            <ul>
+                <li data-ng-repeat="value in experience.keywords">{{ value }}</li>
+            </ul>
+        </section>
+    </section>
+
+    <section data-education>
+        <h2>Education</h2>
+        <section data-ng-repeat="education in educations">
+            <h3>
+                <span data-organization>{{ education.organization }}</span>,
+                <span data-position>{{ education.degree }}</span>
+            </h3>
+        </section>
+    </section>
+
+    <section data-projects>
+        <h2>Projects</h2>
+        <section data-ng-repeat="project in projects">
+            <h3>
+                <span data-title>{{ project.title }}</span>
+            </h3>
+
+            <p>{{ project.description }}</p>
+            <h4>Accomplishments</h4>
+            <ul>
+                <li data-ng-repeat="value in project.accomplishments">{{ value }}</li>
+            </ul>
+            <h4>Keywords</h4>
+            <ul>
+                <li data-ng-repeat="value in project.keywords">{{ value }}</li>
+            </ul>
+        </section>
+    </section>
+
+    <section data-skills>
+        <h2>Skills</h2>
+        <section data-ng-repeat="category in skills">
+            <h3>
+                <span data-category>{{ category.title }}</span>
+            </h3>
+
+            <ul>
+                <li data-ng-repeat="value in category.values">{{ value }}</li>
+            </ul>
+        </section>
+    </section>
+</article>
