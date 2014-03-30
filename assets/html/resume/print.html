@@ -1,0 +1,18 @@
+<article>
+    <section>
+        <h1>{{ contact.full_name }}</h1>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <table>
+            <tbody data-ng-repeat="experience in experiences">
+                <tr><td><h3>{{ experience.organization }}, {{ experience.position }}</h3></td></tr>
+                <tr><td>{{ experience.city }}, {{ experience.state }}, {{ experience.from | date:'MMM y' }} - {{ experience.to | date:'MMM y' }}</td></tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</article>

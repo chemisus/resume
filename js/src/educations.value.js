@@ -1,7 +1,7 @@
 angular.module('educations.value', [])
     .value('educations', [
         {
-            title: 'Bachelor\'s of Computer Science',
+            degree: 'Bachelor\'s of Computer Science',
             organization: 'University of Central Florida',
             city: 'Orlando',
             state: 'Florida',

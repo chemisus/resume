@@ -1,4 +1,22 @@
-angular.module('App', [
+angular.module('activities.value', [])
+    .value('activities', {
+        publish: true,
+        position: 'Web Developer',
+        organization: 'Theta Tau',
+        city: 'Orlando',
+        state: 'Florida',
+        from: '2009-08-01',
+        to: '2012-12-01',
+        description: 'Created the chapter\'s website and maintained it until graduation. Still involved in the site, and mentor those maintaining it.',
+        accomplishments: [
+            'Prepared the site using Linux, Apache, MySql, and PHP',
+            'Mentor new students on how to update the site using ssh and git',
+            'Used as a test environment to learn about custom frameworks and dependency injection libraries'
+        ],
+        keywords: ['PHP', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
+    })
+;
+;angular.module('App', [
         'ngRoute',
         'contact.value',
         'objective.value',
@@ -14,6 +32,14 @@ angular.module('App', [
 
         $routeProvider.when('/text', {
             templateUrl: 'assets/html/resume/text.html'
+        });
+
+        $routeProvider.when('/markdown', {
+            templateUrl: 'assets/html/resume/markdown.html'
+        });
+
+        $routeProvider.when('/print', {
+            templateUrl: 'assets/html/resume/print.html'
         });
 
         $routeProvider.otherwise({
@@ -49,7 +75,7 @@ angular.module('App', [
 ;angular.module('educations.value', [])
     .value('educations', [
         {
-            title: 'Bachelor\'s of Computer Science',
+            degree: 'Bachelor\'s of Computer Science',
             organization: 'University of Central Florida',
             city: 'Orlando',
             state: 'Florida',
@@ -74,11 +100,11 @@ angular.module('App', [
             state: 'Florida',
             from: '2014-01-01',
             to: 'Current',
-            description: '***',
+            description: 'Collaborated with other developers to initiate a replacement for a system reliant on failing hardware and end-of-life software. Improved performance in various applications.',
             accomplishments: [
                 'Reduced report generation time by 83% by restructuring database tables and optimizing queries',
                 'Created a tool that would import spreadsheets containing a radio station\'s track spins information, then generate reports. This eliminated a weeks worth of calculations previously performed by hand',
-                'Currently working on a cart and billing system to handle both online and disc-by-mail subscriptions. The system is being tested using karma, protractor and phpunit.'
+                'Currently working on a cart and billing system to handle both online and disc-by-mail subscriptions. The system is being built as a single page app with Laravel and AngularJS, and tested using Karma, Protractor and PHPUnit.'
             ],
             keywords: ['PHP', 'PHPUnit', 'PostgreSql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
@@ -96,7 +122,7 @@ angular.module('App', [
                 'Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts',
                 'Implemented Authorize.net API for payment processing',
                 'Implemented OAuth for quick login with Google profiles',
-                'Unit and integration tested the application with phpunit',
+                'Unit and integration tested the application with PHPUnit',
                 'Used Laravel for the backend and AngularJS for the frontend frameworks',
             ],
             keywords: ['PHP', 'PHPUnit', 'MySql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
@@ -140,7 +166,7 @@ angular.module('App', [
             state: 'Florida',
             from: '2010-11-01',
             to: '2011-06-01',
-            description: 'Developed mintees.com as well as several sites for various clients.',
+            description: 'Lead the development of mintees.com. Collaborated with project manager to create or update several sites for various clients.',
             accomplishments: [
                 'Performed as the lead developer in the creation of mintees.com, which came with a three week deadline that was successfully met. Created bash scripts to mine and import 13,000 user profiles and content of a site that was shutting down. This allowed users to transition to mintees.com with minimal disruptions.',
                 'Created or updated sites or e-commerce stores for several clients using PHP and a proprietary content management system'
@@ -155,9 +181,9 @@ angular.module('App', [
             state: 'Florida',
             from: '2010-05-01',
             to: '2010-11-01',
-            description: '*** Centrix Networks is a VoIP telephony provider for Orlando, Florida',
+            description: 'Headed the creation of a customer relation management system.',
             accomplishments: [
-                'Developed a portal for technical support to organize communications',
+                'Developed a portal for technical support to organize communications with customers',
                 'Created a module that imported emails between the tech support team and customers into the system',
                 'Maintained the company\'s main website'
             ],
@@ -171,7 +197,7 @@ angular.module('App', [
             state: 'Florida',
             from: '2008-01-01',
             to: '2009-12-01',
-            description: '*** Volunteers in Florida is a nonprofit organization that sends volunteers to help in social work, shelters, health care, food banks, legal services, teaching, working with farm workers, senior citizens and in other fields',
+            description: 'In charge of maintaining both the organization\'s internal and external websites.',
             accomplishments: [
                 'Resolved long standing bugs by previous developers',
                 'Doubled as network admin for network and computer issues'
@@ -186,7 +212,7 @@ angular.module('App', [
             state: 'Florida',
             from: '2003-08-01',
             to: '2006-12-01',
-            description: '*** ',
+            description: 'Migrated the database for several clients from Access 98 to MsSql 2000.',
             accomplishments: [
                 'Designed and maintained databases for multiple clients',
                 'Coded custom modules for databases depending on client\'s requests',
@@ -203,13 +229,14 @@ angular.module('App', [
             state: 'Florida',
             from: '2003-08-01',
             to: '2006-12-01',
-            description: '*** ',
+            description: 'Responded to house calls to provide services for computer and network issues or requests',
             accomplishments: [
-                'Responded to house calls to provide services for computer and network issues',
-                'Tutored clients, mostly seniors, on the use of cameras, printers and software programs'
+                'Experience significant word of mouth advertisement from satisfied clients',
+                'Tutored clients, mostly seniors, on the use of cameras, printers and software programs',
+                'Built custom high performance computers for customers to save money',
+                'Repaired in-home several computers, laptops, or network devices'
             ],
-            keywords: [
-            ]
+            keywords: ['Networking', 'Tech Support']
         }
     ])
 ;
@@ -219,13 +246,13 @@ angular.module('App', [
 ;angular.module('projects.value', [])
     .value('projects', [
         {
+            publish: true,
             title: 'Fodszqu',
             city: 'Orlando',
             state: 'Florida',
             from: 'September 2013',
             to: 'Current',
             description: 'Fodszqu is a site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.',
-            publish: true,
             resources: [
                 {type: 'github', location: 'http://github.com/chemisus/fodszqu'}
             ],
@@ -238,25 +265,25 @@ angular.module('App', [
             keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
         },
         {
+            publish: true,
             title: 'Gym Tracker',
             city: 'Orlando',
             state: 'Florida',
             from: 'September 2013',
             to: 'Current',
-            description: '',
-            publish: true,
+            description: '***',
             resources: [],
             accomplishments: ['***'],
             keywords: ['***']
         },
         {
+            publish: false,
             title: 'Imgphile',
             city: 'Orlando',
             state: 'Florida',
             from: 'February 2013',
             to: 'Current',
             description: 'Imgphile.com is a website that will allow its members to upload images and discuss with other members of the community. I am the lead developer for the project. The site will feature an “endless scroll” and continuous update of content as it arrives.',
-            publish: false,
             accomplishments: [
                 'Designed front end to minimize connections and bandwidth',
                 'Developed back end framework to process REST commands',
@@ -265,20 +292,20 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
         {
+            publish: false,
             title: 'Projx',
             city: 'Orlando',
             state: 'Florida',
             from: 'February 2013',
             to: 'Current',
             description: '***',
-            publish: false,
             accomplishments: ['***'],
             keywords: ['***']
         },
         {
+            publish: true,
             title: 'Knight Krawler',
             description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
-            publish: true,
             resources: [
                 {type: 'website', location: 'http://knightkrawler.net'},
                 {type: 'github', location: 'https://github.com/chemisus/knightkrawler'}
@@ -291,9 +318,9 @@ angular.module('App', [
             keywords: ['Arduino', 'C++']
         },
         {
+            publish: true,
             title: 'Slinpin',
             description: '***',
-            publish: true,
             resources: [
                 {type: 'composer', location: 'https://packagist.org/packages/chemisus/slinpin'},
                 {type: 'github', location: 'http://github.com/chemisus/slinpin'}
@@ -305,9 +332,9 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit']
         },
         {
+            publish: true,
             title: 'Dragon',
             description: '***',
-            publish: false,
             resources: [
                 {type: 'github', location: 'http://github.com/chemisus/dragon'}
             ],
@@ -317,9 +344,9 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit']
         },
         {
+            publish: true,
             title: 'OpenAuth',
             description: '***',
-            publish: true,
             resources: [
                 {type: 'composer', location: 'https://packagist.org/packages/chemisus/openauth'},
                 {type: 'github', location: 'http://github.com/chemisus/openauth'}
@@ -330,9 +357,9 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit']
         },
         {
+            publish: true,
             title: 'Moolah',
             description: '***',
-            publish: true,
             resources: [
                 {type: 'composer', location: 'https://packagist.org/packages/chemisus/moolah'},
                 {type: 'github', location: 'http://github.com/chemisus/moolah'}
@@ -343,9 +370,9 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit']
         },
         {
+            publish: true,
             title: 'Snuggie',
             description: '***',
-            publish: true,
             resources: [
                 {type: 'github', location: 'http://github.com/chemisus/snuggie'}
             ],
@@ -355,9 +382,9 @@ angular.module('App', [
             keywords: ['PHP', 'PHPUnit', 'CouchDB']
         },
         {
+            publish: true,
             title: 'Android Presentation',
             description: 'Includes a client which runs on an android device, and a server running on a computer with powerpoint. The client can control the server and move the presentation forward/backwards, and the server will send a screenshot to the client so that the presenter knows which slide he is on without having to turn around and look at the screen.',
-            publish: true,
             resources: [
             ],
             accomplishments: [
@@ -366,9 +393,9 @@ angular.module('App', [
             keywords: ['Java', 'Android']
         },
         {
+            publish: true,
             title: 'Group Text',
             description: '***',
-            publish: false,
             resources: [
             ],
             accomplishments: [
@@ -377,9 +404,9 @@ angular.module('App', [
             keywords: ['Java']
         },
         {
+            publish: true,
             title: 'PS3board',
             description: 'Allows a user to replace a keyboard and mouse with a PS3 controller.',
-            publish: true,
             resources: [
                 {type: 'github', location: 'http://github.com/chemisus/ps3board'}
             ],
@@ -391,9 +418,9 @@ angular.module('App', [
             keywords: ['C++']
         },
         {
+            publish: true,
             title: 'Awesome Defense',
             description: 'A multiplayer android tower defense game. Developed both the clients running on android devices, and the server in java which ran on a laptop.',
-            publish: true,
             resources: [
                 {type: 'github', location: 'http://github.com/chemisus/slinpin'}
             ],
@@ -403,13 +430,13 @@ angular.module('App', [
             keywords: ['Java', 'Android']
         },
         {
+            publish: false,
             title: 'sprintguide.com',
             city: 'Orlando',
             state: 'Florida',
             from: 'February 2013',
             to: 'Current',
             description: '',
-            publish: false,
             accomplishments: [
                 '***'
             ],

@@ -38,7 +38,7 @@
     <div>EDUCATION</div>
     <br>
 
-    <div data-ng-repeat="education in educations">
+    <div data-ng-repeat="education in educations | filter:{publish:true}">
         <div>{{ ($index + 1) }}. {{ education.organization }}, {{ education.degree }}</div>
         <br/>
     </div>
@@ -47,7 +47,7 @@
     <div>PROJECTS</div>
     <br>
 
-    <div data-ng-repeat="project in projects">
+    <div data-ng-repeat="project in projects | filter:{publish:true}">
         <div data-title>{{ ($index + 1) }}. {{ project.title }}</div>
 
         <div>{{ project.description }}</div>

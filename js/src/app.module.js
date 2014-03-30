@@ -16,6 +16,14 @@ angular.module('App', [
             templateUrl: 'assets/html/resume/text.html'
         });
 
+        $routeProvider.when('/markdown', {
+            templateUrl: 'assets/html/resume/markdown.html'
+        });
+
+        $routeProvider.when('/print', {
+            templateUrl: 'assets/html/resume/print.html'
+        });
+
         $routeProvider.otherwise({
             templateUrl: 'assets/html/resume/default.html'
         });

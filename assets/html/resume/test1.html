@@ -1,6 +1,5 @@
 <link href="vendor/foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
 <link href="vendor/foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/resume.css" rel="stylesheet" type="text/css"/>
 <article data-resume-default>
     <section data-contact>
         <div class="row">
@@ -90,7 +89,7 @@
                 <h2>Projects</h2>
             </div>
         </div>
-        <section data-ng-repeat="project in projects">
+        <section data-ng-repeat="project in projects | filter:{publish:true}">
             <div class="row">
                 <div class="columns medium-12">
                     <h3>
