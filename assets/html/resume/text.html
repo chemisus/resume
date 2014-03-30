@@ -24,16 +24,11 @@
 
     <div data-ng-repeat="experience in experiences | filter:{publish:true}">
         <div>{{ ($index + 1) }}. {{ experience.organization }}, {{ experience.position }}</div>
+        <br>
+
         <div>{{ experience.description }}</div>
         <br>
 
-        <div>Keywords</div>
-        <div>
-            <span data-ng-repeat="value in experience.keywords">{{ $index > 0 ? ',' : '' }} {{ value }}</span>
-        </div>
-        <br>
-
-        <div>Accomplishments</div>
         <div data-ng-repeat="value in experience.accomplishments">&nbsp;&bullet; {{ value }}</div>
         <br>
     </div>

@@ -5,7 +5,7 @@
     <section data-contact>
         <div class="row">
             <div class="columns small-12">
-                <h1>{{ contact.full_name }}</h1>
+                <h1 class="">{{ contact.full_name }}</h1>
                 {{ contact.title }}
                 <address data-address>{{ contact.address.street }}, {{ contact.address.city }}, {{ contact.address.state }} {{ contact.address.zip }}</address>
                 <address data-phone>{{ contact.phone }}</address>
@@ -38,21 +38,19 @@
                 </h3>
             </div>
             <div class="row">
-                <div class="columns small-3">
-                    <h4>Summary</h4>
-
-                    <p>{{ experience.description }}</p>
-                </div>
-                <div class="columns small-6">
-                    <h4>Accomplishments</h4>
-                    <ul>
-                        <li data-ng-repeat="value in experience.accomplishments">{{ value }}</li>
+                <div class="columns small-12">
+                    <ul class="inline-list">
+                        <li data-ng-repeat="value in experience.keywords">
+                            <span class="label secondary">{{ value }}</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="columns small-3 ">
-                    <h4>Keywords</h4>
-                    <ul class="inline-list">
-                        <li data-ng-repeat="value in experience.keywords"><span class="label secondary">{{ value }}</span></li>
+            </div>
+            <div class="row">
+                <div class="columns small-12">
+                    <p>{{ experience.description }}</p>
+                    <ul>
+                        <li data-ng-repeat="value in experience.accomplishments">{{ value }}</li>
                     </ul>
                 </div>
             </div>
@@ -91,23 +89,20 @@
                     </h3>
                 </div>
             </div>
-
             <div class="row">
-                <div class="columns small-3">
-                    <h4>Summary</h4>
-
-                    <p>{{ project.description }}</p>
-                </div>
-                <div class="columns small-6">
-                    <h4>Accomplishments</h4>
-                    <ul>
-                        <li data-ng-repeat="value in project.accomplishments">{{ value }}</li>
+                <div class="columns small-12">
+                    <ul class="inline-list">
+                        <li data-ng-repeat="value in project.keywords">
+                            <span class="label secondary">{{ value }}</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="columns small-3">
-                    <h4>Keywords</h4>
+            </div>
+            <div class="row">
+                <div class="columns small-12">
+                    <p>{{ project.description }}</p>
                     <ul>
-                        <li data-ng-repeat="value in project.keywords">{{ value }}</li>
+                        <li data-ng-repeat="value in project.accomplishments">{{ value }}</li>
                     </ul>
                 </div>
             </div>

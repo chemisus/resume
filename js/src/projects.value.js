@@ -1,7 +1,7 @@
 angular.module('projects.value', [])
     .value('projects', [
         {
-            title: 'fodszqu.com',
+            title: 'Fodszqu',
             city: 'Orlando',
             state: 'Florida',
             from: 'September 2013',
@@ -23,7 +23,7 @@ angular.module('projects.value', [])
             keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
         },
         {
-            title: 'gymbrute.com',
+            title: 'Gym Tracker',
             city: 'Orlando',
             state: 'Florida',
             from: 'September 2013',
@@ -35,7 +35,7 @@ angular.module('projects.value', [])
             keywords: []
         },
         {
-            title: 'imgphile.com',
+            title: 'Imgphile',
             city: 'Orlando',
             state: 'Florida',
             from: 'February 2013',
@@ -50,7 +50,7 @@ angular.module('projects.value', [])
             keywords: ['PHP', 'PHPUnit', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
         {
-            title: 'projx.io',
+            title: 'Projx',
             city: 'Orlando',
             state: 'Florida',
             from: 'February 2013',
@@ -61,7 +61,18 @@ angular.module('projects.value', [])
             keywords: []
         },
         {
-            title: 'Knight Krawler - ATV Wheelchair Attachment',
+            title: 'Awesome Defense',
+            city: 'Orlando',
+            state: 'Florida',
+            from: 'December 2012',
+            to: 'Current',
+            description: '',
+            publish: false,
+            accomplishments: [],
+            keywords: []
+        },
+        {
+            title: 'Knight Krawler',
             description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
             publish: true,
             resources: [
@@ -84,7 +95,7 @@ angular.module('projects.value', [])
             ]
         },
         {
-            title: 'Slinpin - Dependency Injection Container',
+            title: 'Slinpin',
             description: 'A PHP dependency injection container.',
             publish: true,
             resources: [

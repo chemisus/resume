@@ -11,10 +11,10 @@ angular.module('experiences.value', [])
             publish: true,
             accomplishments: [
                 'Reduced report generation time by 83% by restructuring database tables and optimizing queries',
-                'Created a tool that would import spreadsheets containing a radio station\'s track spins information, then generate reports',
-                'Currently working on a replacement for a cart system where the current system\'s software is no longer supported'
+                'Created a tool that would import spreadsheets containing a radio station\'s track spins information, then generate reports. This eliminated a weeks worth of calculations previously performed by hand',
+                'Currently working on a cart system to replace the current software, which is no longer supported'
             ],
-            keywords: ['PHP', 'PHPUnit', 'Postgres Sql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
+            keywords: ['PHP', 'PHPUnit', 'PostgreSql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'REST', 'git']
         },
         {
             position: 'Senior Developer',
@@ -23,18 +23,15 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'April 2013',
             to: 'September 2013',
-            description: 'Xulon Press is an on-demand book publisher. I was contracted for six months to help with a complete restructure of their internal company website. The project included management, quotes, orders, payment scheduling and processing, accounting, and was developed using Laravel 4 and AngularJS.',
+            description: 'Served six month contract to restructure the organization\'s internal website. The project followed agile and pair programming strategies.',
             publish: true,
             accomplishments: [
-                'Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts.',
-                'Implemented Authorize.net for payment processing.',
-                'Implemented OAuth for quick login with Google information.',
-                'Created unit and integration tests to be ran by phpunit and phing.',
-                'Used composer to install, update, and load third party packages.',
-                'Used Laravel for the backend and AngularJS for the frontend frameworks.',
-                'Frequently used pair programming strategies.',
-                'Created a script that would generate classes to tie Laravel 4\'s facades and PhpStorm\'s autocomplete functionality.',
-                'Performed as lead developer and coach by mentoring or explaining concepts.'
+                'Performed as lead developer and coach by mentoring or explaining concepts to other members of the team',
+                'Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts',
+                'Implemented Authorize.net API for payment processing',
+                'Implemented OAuth for quick login with Google profiles',
+                'Unit and integration tested the application with phpunit',
+                'Used Laravel for the backend and AngularJS for the frontend frameworks',
             ],
             keywords: ['PHP', 'PHPUnit', 'MySql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         },
@@ -45,11 +42,11 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'June 2011',
             to: 'December 2012',
-            description: 'I was brought on to help develop the website for Innovation through Institutional Integration (ICubed), then later to take over maintenance of the websites for Young Entrepreneur Scholarships (YES) and GEMS. ICubed is an program pairs students from artistic and STEM majors collaborate to produce scientifically influenced art.',
+            description: 'Worked with the Dean of Engineering and the Director of Engineering Outreach to create or maintain websites related to engineering at UCF.',
             publish: true,
             accomplishments: [
-                'Developed the website for ICubed',
-                'Maintained the websites for outreach programs YES and GEMS'
+                'Developed the website for UCF\'s program for Innovation through Institutional Integration',
+                'Maintained the websites for the outreach programs Young Entrepreneur Scholars (YES) and Girls Excelling in Math and Science (GEMS)'
             ],
             keywords: ['PHP', 'MySql', 'HTML5', 'CSS3', 'git']
         },
@@ -60,12 +57,12 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'August 2009',
             to: 'December 2012',
-            description: 'Created the chapter\'s website and maintained it for several years until graduation. I still make occasional modifications and mentor those currently in charge of it.',
+            description: 'Created the chapter\'s website and maintained it until graduation. Still involved in the site, and mentor those maintaining it.',
             publish: true,
             accomplishments: [
-                'Created Slinpins (Dependency Injector)',
-                'Developed Dragon (PHP Framework)',
-                'Implemented Twitter\'s Bootstrap for a responsive design'
+                'Prepared the site using Linux, Apache, MySql, and PHP',
+                'Mentor new students on how to update the site using ssh and git',
+                'Used as a test environment to learn about custom frameworks and dependency injection libraries'
             ],
             keywords: ['PHP', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         },
@@ -76,13 +73,11 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'November 2010',
             to: 'June 2011',
-            description: 'AKT specializes in marketing and promotions for bands and brands.',
+            description: 'Developed mintees.com as well as several sites for various clients.',
             publish: true,
             accomplishments: [
-                'Recreated a site that had announced it was closing in a three week period',
-                'Created bash scripts to import all content from the closing site',
-                'Implemented a method for users to claim their account on the new site',
-                'Worked on several Content Management Systems for clients.'
+                'Performed as the lead developer in the creation of mintees.com, which came with a three week deadline that was successfully met. Created bash scripts to mine and import 13,000 user profiles and content of a site that was shutting down. This allowed users to transition to mintees.com with minimal disruptions.',
+                'Created or updated sites or e-commerce stores for several clients using PHP and a proprietary content management system'
             ],
             keywords: ['PHP', 'HTML5', 'CSS3', 'jQuery', 'git']
         },
@@ -93,7 +88,7 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'May 2010',
             to: 'November 2010',
-            description: 'Centrix Networks is a VoIP telephony provider for Orlando, Florida.',
+            description: 'Centrix Networks is a VoIP telephony provider for Orlando, Florida',
             publish: true,
             accomplishments: [
                 'Developed a portal for technical support to organize communications',
@@ -109,11 +104,11 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: 'January 2008',
             to: 'December 2009',
-            description: 'Volunteers in Florida is a nonprofit organization that sends volunteers to help in social work, shelters, health care, food banks, legal services, teaching, working with farm workers, senior citizens and in other fields.',
+            description: 'Volunteers in Florida is a nonprofit organization that sends volunteers to help in social work, shelters, health care, food banks, legal services, teaching, working with farm workers, senior citizens and in other fields',
             publish: true,
             accomplishments: [
                 'Resolved long standing bugs by previous developers',
-                'Doubled as network admin for network and computer issues.'
+                'Doubled as network admin for network and computer issues'
             ],
             keywords: ['PHP', 'HTML', 'CSS']
         },
@@ -136,7 +131,7 @@ angular.module('experiences.value', [])
         },
         {
             position: 'Computer & Network Technician',
-            organization: 'Chemisus Inc.',
+            organization: 'Chemisus Inc',
             city: 'Fort Myers',
             state: 'Florida',
             from: 'August 2003',
@@ -144,8 +139,8 @@ angular.module('experiences.value', [])
             publish: true,
             description: '',
             accomplishments: [
-                'Responded to house calls to provide services for computer and network issues.',
-                'Tutored clients, mostly seniors, on the use of cameras, printers and software programs.'
+                'Responded to house calls to provide services for computer and network issues',
+                'Tutored clients, mostly seniors, on the use of cameras, printers and software programs'
             ],
             keywords: [
             ]
