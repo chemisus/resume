@@ -2,11 +2,36 @@
 <html data-ng-app="App">
     <head>
         <title>Terrence Howard</title>
+        <link href="vendor/foundation-icon-fonts/foundation-icons.css" rel="stylesheet" type="text/css"/>
+        <style>
+            @media print {
+                [data-layout] {
+                    display: none;
+                }
+            }
+
+            [data-layout] {
+                position: fixed;
+                right: 2rem;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul data-layout>
+            <li><a data-ng-href="#/">Web</a></li>
+            <li><a data-ng-href="#/text">Text</a></li>
+            <li><a data-ng-href="#/markdown">Markdown</a></li>
+            <li><a data-ng-href="#/test1">Test1</a></li>
+        </ul>
+
+        <div data-ng-view></div>
+
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/foundation/js/foundation.min.js"></script>
         <script src="vendor/angular/angular.min.js"></script>
         <script src="vendor/angular-route/angular-route.min.js"></script>
         <script src="assets/js/resume.js"></script>
-    </head>
-    <body>
-        <div data-ng-view></div>
     </body>
 </html>

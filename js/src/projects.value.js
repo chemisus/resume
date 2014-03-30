@@ -9,10 +9,7 @@ angular.module('projects.value', [])
             description: 'Fodszqu is a site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.',
             publish: true,
             resources: [
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/fodszqu'
-                }
+                {type: 'github', location: 'http://github.com/chemisus/fodszqu'}
             ],
             accomplishments: [
                 'Constructed the site using PHP, Laravel, and CouchDB',
@@ -31,8 +28,8 @@ angular.module('projects.value', [])
             description: '',
             publish: true,
             resources: [],
-            accomplishments: [],
-            keywords: []
+            accomplishments: ['***'],
+            keywords: ['***']
         },
         {
             title: 'Imgphile',
@@ -55,141 +52,89 @@ angular.module('projects.value', [])
             state: 'Florida',
             from: 'February 2013',
             to: 'Current',
-            description: '',
+            description: '***',
             publish: false,
-            accomplishments: [],
-            keywords: []
-        },
-        {
-            title: 'Awesome Defense',
-            city: 'Orlando',
-            state: 'Florida',
-            from: 'December 2012',
-            to: 'Current',
-            description: '',
-            publish: false,
-            accomplishments: [],
-            keywords: []
+            accomplishments: ['***'],
+            keywords: ['***']
         },
         {
             title: 'Knight Krawler',
             description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
             publish: true,
             resources: [
-                {
-                    type: 'website',
-                    location: 'http://knightkrawler.net'
-                },
-                {
-                    type: 'github',
-                    location: 'https://github.com/chemisus/knightkrawler'
-                }
+                {type: 'website', location: 'http://knightkrawler.net'},
+                {type: 'github', location: 'https://github.com/chemisus/knightkrawler'}
             ],
             accomplishments: [
                 'Developed the software in C++ to control the steering, platform lift, and drive functions.',
                 'Successfully implemented the Ackerman Steering Principle.',
                 'Used an Arduino Uno and relays to control motor and linear actuator functions.'
             ],
-            keywords: [
-                'Arduino', 'C++'
-            ]
+            keywords: ['Arduino', 'C++']
         },
         {
             title: 'Slinpin',
-            description: 'A PHP dependency injection container.',
+            description: '***',
             publish: true,
             resources: [
-                {
-                    type: 'composer',
-                    location: 'https://packagist.org/packages/chemisus/slinpin'
-                },
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/slinpin'
-                }
+                {type: 'composer', location: 'https://packagist.org/packages/chemisus/slinpin'},
+                {type: 'github', location: 'http://github.com/chemisus/slinpin'}
             ],
             accomplishments: [
                 'Used PHP reflection to get parameter types and inject appropriate data.',
                 'Developed unit tests with 100% code coverage.'
             ],
-            keywords: [
-                'PHP', 'PHPUnit'
-            ]
+            keywords: ['PHP', 'PHPUnit']
         },
         {
             title: 'Dragon',
-            description: 'PHP MVC Framework',
+            description: '***',
             publish: false,
             resources: [
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/dragon'
-                }
+                {type: 'github', location: 'http://github.com/chemisus/dragon'}
             ],
             accomplishments: [
+                '***'
             ],
-            keywords: [
-                'PHP', 'PHPUnit'
-            ]
+            keywords: ['PHP', 'PHPUnit']
         },
         {
             title: 'OpenAuth',
-            description: 'PHP OpenAuth Package',
+            description: '***',
             publish: true,
             resources: [
-                {
-                    type: 'composer',
-                    location: 'https://packagist.org/packages/chemisus/openauth'
-                },
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/openauth'
-                }
+                {type: 'composer', location: 'https://packagist.org/packages/chemisus/openauth'},
+                {type: 'github', location: 'http://github.com/chemisus/openauth'}
             ],
             accomplishments: [
-                'Implemented OpenAuth for Google.'
+                '***'
             ],
-            keywords: [
-                'PHP', 'PHPUnit'
-            ]
+            keywords: ['PHP', 'PHPUnit']
         },
         {
             title: 'Moolah',
-            description: 'PHP Authorize.Net Package',
+            description: '***',
             publish: true,
             resources: [
-                {
-                    type: 'composer',
-                    location: 'https://packagist.org/packages/chemisus/moolah'
-                },
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/moolah'
-                }
+                {type: 'composer', location: 'https://packagist.org/packages/chemisus/moolah'},
+                {type: 'github', location: 'http://github.com/chemisus/moolah'}
             ],
             accomplishments: [
-                'Implemented Authorize.Net payment gateway.'
+                '***'
             ],
-            keywords: [
-                'PHP', 'PHPUnit'
-            ]
+            keywords: ['PHP', 'PHPUnit']
         },
         {
             title: 'Snuggie',
-            description: 'PHP CouchDB ODM',
+            description: '***',
             publish: true,
             resources: [
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/snuggie'
-                }
+                {type: 'github', location: 'http://github.com/chemisus/snuggie'}
             ],
             accomplishments: [
-                'Allows freeze and thaw capability when storing in a CouchDB database.',
+                '***'
             ],
-            keywords: [
-                'PHP', 'PHPUnit', 'CouchDB'
-            ]
+            keywords: ['PHP', 'PHPUnit', 'CouchDB']
         },
         {
             title: 'Android Presentation',
@@ -198,59 +143,46 @@ angular.module('projects.value', [])
             resources: [
             ],
             accomplishments: [
+                '***'
             ],
-            keywords: [
-                'Java',
-                'Android',
-            ]
+            keywords: ['Java', 'Android']
         },
         {
             title: 'Group Text',
-            description: '',
+            description: '***',
             publish: false,
             resources: [
             ],
             accomplishments: [
+                '***'
             ],
-            keywords: [
-                'Java'
-            ]
+            keywords: ['Java']
         },
         {
             title: 'PS3board',
             description: 'Allows a user to replace a keyboard and mouse with a PS3 controller.',
             publish: true,
             resources: [
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/ps3board'
-                }
+                {type: 'github', location: 'http://github.com/chemisus/ps3board'}
             ],
             accomplishments: [
                 'Programmed the right joystick to move the cursor, acting as a mouse.',
                 'Assigned the left and right joysticks to perform left and right mouse clicks.',
                 'Combined the left joystick and the four main buttons to simulate a keyboard.'
             ],
-            keywords: [
-                'C++'
-            ]
+            keywords: ['C++']
         },
         {
             title: 'Awesome Defense',
             description: 'A multiplayer android tower defense game. Developed both the clients running on android devices, and the server in java which ran on a laptop.',
             publish: true,
             resources: [
-                {
-                    type: 'github',
-                    location: 'http://github.com/chemisus/slinpin'
-                }
+                {type: 'github', location: 'http://github.com/chemisus/slinpin'}
             ],
             accomplishments: [
+                '***'
             ],
-            keywords: [
-                'Java',
-                'Android'
-            ]
+            keywords: ['Java', 'Android']
         },
         {
             title: 'sprintguide.com',
@@ -261,16 +193,9 @@ angular.module('projects.value', [])
             description: '',
             publish: false,
             accomplishments: [
+                '***'
             ],
-            keywords: [
-                'PHP',
-                'CouchDB',
-                'HTML5',
-                'CSS3',
-                'jQuery',
-                'AngularJS',
-                'git'
-            ]
+            keywords: ['PHP', 'CouchDB', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         }
     ])
 ;

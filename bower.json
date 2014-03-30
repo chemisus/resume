@@ -19,7 +19,7 @@
   "dependencies": {
     "angular": "*",
     "angular-route": "*",
-    "bootstrap": "*",
-    "foundation": "~5.2.1"
+    "foundation": "*",
+    "foundation-icon-fonts": "*"
   }
 }
