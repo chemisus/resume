@@ -8,7 +8,7 @@ angular.module('educations.value', [])
             from: 'Spring 2007',
             to: 'Fall 2012',
             publish: true,
-            description: '',
+            description: 'Graduated Fall 2012',
             accomplishments: [
                 'Member of Theta Tau, Professional Engineering Fraternity',
                 'Member of Phi Theta Kappa, Academic Honor Society'

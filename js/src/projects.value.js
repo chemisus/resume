@@ -13,8 +13,8 @@ angular.module('projects.value', [])
             ],
             accomplishments: [
                 'Constructed the site using PHP, Laravel, and CouchDB',
-                'Created integration tests to ensure that the site\'s api works as intended',
-                'Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, along with sending and retrieving messages via curl.',
+                'Created integration tests to ensure that the site\'s API works as intended',
+                'Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, and sending and retrieving messages via curl.',
                 'Implemented a process to accept bitcoin payments for amounts depending on message sizes'
             ],
             keywords: ['PHP', 'Laravel', 'CouchDB', 'HTML5', 'CSS3', 'REST', 'git', 'bash', 'encryption', 'curl', 'bitcoin']
@@ -66,9 +66,9 @@ angular.module('projects.value', [])
                 {type: 'github', location: 'https://github.com/chemisus/knightkrawler'}
             ],
             accomplishments: [
-                'Developed the software in C++ to control the steering, platform lift, and drive functions.',
-                'Successfully implemented the Ackerman Steering Principle.',
-                'Used an Arduino Uno and relays to control motor and linear actuator functions.'
+                'Developed the software in C++ to control the steering, platform lift, and drive functions',
+                'Successfully implemented the Ackerman Steering Principle into the drive-control system',
+                'Used an Arduino Uno and relay module to control motor and linear actuator functions'
             ],
             keywords: ['Arduino', 'C++']
         },

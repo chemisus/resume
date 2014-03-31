@@ -28,10 +28,9 @@ angular.module('experiences.value', [])
             accomplishments: [
                 'Performed as lead developer and coach: mentored other team members; explained and clarified concepts; assisted with milestone definition and progress assessment.',
                 'Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts',
-                'Implemented Authorize.net API for payment processing',
-                'Implemented OAuth for quick login with Google profiles',
+                'Implemented Authorize.net API for payment processing and OAuth for quick login with Google profiles',
                 'Unit and integration tested the application with PHPUnit',
-                'Used Laravel for the backend and AngularJS for the frontend frameworks',
+                'Used Laravel and AngularJS for the backend and frontend frameworks, respectively',
             ],
             keywords: ['PHP', 'PHPUnit', 'MySql', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'git']
         },
@@ -58,7 +57,7 @@ angular.module('experiences.value', [])
             state: 'Florida',
             from: '2009-08-01',
             to: '2012-12-01',
-            description: 'Created the chapter\'s website and maintained it until graduation. Still involved in the site, and mentor those maintaining it.',
+            description: 'Created and maintained the chapter\'s website until graduation. Still involved in mentoring those maintaining it.',
             accomplishments: [
                 'Prepared the site using Linux, Apache, MySql, and PHP',
                 'Mentor new students on how to update the site using ssh and git',
@@ -77,7 +76,7 @@ angular.module('experiences.value', [])
             description: 'Lead the development of mintees.com. Collaborated with project manager to create or update several sites for various clients.',
             accomplishments: [
                 'Lead developer in the creation of mintees.com: successfully met a demanding three week deadline.',
-                'Created or updated sites or e-commerce stores for several clients using PHP and a proprietary content management system'
+                'Created and updated sites and e-commerce stores for several clients using PHP and a proprietary content management system'
             ],
             keywords: ['PHP', 'HTML5', 'CSS3', 'jQuery', 'git']
         },
@@ -125,7 +124,7 @@ angular.module('experiences.value', [])
                 'Designed and maintained databases for multiple clients',
                 'Coded custom modules for databases depending on client\'s requests',
                 'Created server and client applications for various users',
-                'Completed websites abandoned from previous developers'
+                'Completed unfinished websites'
             ],
             keywords: ['VBA', 'Access', 'VB6', 'ASP']
         },
@@ -142,7 +141,7 @@ angular.module('experiences.value', [])
                 'Experience significant word of mouth advertisement from satisfied clients',
                 'Tutored clients, mostly seniors, on the use of cameras, printers and software programs',
                 'Built custom high performance computers for customers to save money',
-                'Repaired in-home several computers, laptops, or network devices'
+                'Repaired several computers, laptops, and network devices in clients\' homes'
             ],
             keywords: ['Networking', 'Tech Support']
         }
