@@ -100,7 +100,7 @@ angular.module('activities.value', [])
             state: 'Florida',
             from: '2014-01-01',
             to: 'Current',
-            description: 'Collaborated with other developers to initiate a replacement for a system reliant on failing hardware and end-of-life software. Improved performance in various applications.',
+            description: 'Critical member of a development team which replaced a faulty system reliant on failing hardware and end-of-life software. Result was a significant improvement in system performance coupled with reduced operating costs. ',
             accomplishments: [
                 'Reduced report generation time by 83% by restructuring database tables and optimizing queries',
                 'Created a tool that would import spreadsheets containing a radio station\'s track spins information, then generate reports. This eliminated a weeks worth of calculations previously performed by hand',
@@ -116,9 +116,9 @@ angular.module('activities.value', [])
             state: 'Florida',
             from: '2013-04-01',
             to: '2013-07-01',
-            description: 'Served six month contract to restructure the organization\'s internal website. The project followed agile and pair programming strategies.',
+            description: 'Served on a specific task contract to restructure the organization’s internal website. The project followed agile and pair programming strategies.',
             accomplishments: [
-                'Performed as lead developer and coach by mentoring or explaining concepts to other members of the team',
+                'Performed as lead developer and coach: mentored other team members; explained and clarified concepts; assisted with milestone definition and progress assessment.',
                 'Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts',
                 'Implemented Authorize.net API for payment processing',
                 'Implemented OAuth for quick login with Google profiles',
@@ -135,7 +135,7 @@ angular.module('activities.value', [])
             state: 'Florida',
             from: '2011-06-01',
             to: '2012-12-01',
-            description: 'Worked with the Dean of Engineering and the Director of Engineering Outreach to create or maintain websites related to engineering at UCF.',
+            description: 'Was the sole developer working directly for the Dean of Engineering and the Director of Engineering Outreach: created and maintained websites explaining and publicizing UCF Engineering programs and activities.',
             accomplishments: [
                 'Developed the website for UCF\'s program for Innovation through Institutional Integration',
                 'Maintained the websites for the outreach programs Young Entrepreneur Scholars (YES) and Girls Excelling in Math and Science (GEMS)'
@@ -168,7 +168,7 @@ angular.module('activities.value', [])
             to: '2011-06-01',
             description: 'Lead the development of mintees.com. Collaborated with project manager to create or update several sites for various clients.',
             accomplishments: [
-                'Performed as the lead developer in the creation of mintees.com, which came with a three week deadline that was successfully met. Created bash scripts to mine and import 13,000 user profiles and content of a site that was shutting down. This allowed users to transition to mintees.com with minimal disruptions.',
+                'Lead developer in the creation of mintees.com: successfully met a demanding three week deadline.',
                 'Created or updated sites or e-commerce stores for several clients using PHP and a proprietary content management system'
             ],
             keywords: ['PHP', 'HTML5', 'CSS3', 'jQuery', 'git']
@@ -181,10 +181,10 @@ angular.module('activities.value', [])
             state: 'Florida',
             from: '2010-05-01',
             to: '2010-11-01',
-            description: 'Headed the creation of a customer relation management system.',
+            description: 'Created a customer relation management system',
             accomplishments: [
                 'Developed a portal for technical support to organize communications with customers',
-                'Created a module that imported emails between the tech support team and customers into the system',
+                'Created a module that imported e-mails between customers and the tech support team',
                 'Maintained the company\'s main website'
             ],
             keywords: ['PHP', 'HTML', 'CSS', 'jQuery', 'git']
@@ -199,7 +199,7 @@ angular.module('activities.value', [])
             to: '2009-12-01',
             description: 'In charge of maintaining both the organization\'s internal and external websites.',
             accomplishments: [
-                'Resolved long standing bugs by previous developers',
+                'Resolved long standing system faults',
                 'Doubled as network admin for network and computer issues'
             ],
             keywords: ['PHP', 'HTML', 'CSS']
@@ -212,7 +212,7 @@ angular.module('activities.value', [])
             state: 'Florida',
             from: '2003-08-01',
             to: '2006-12-01',
-            description: 'Migrated the database for several clients from Access 98 to MsSql 2000.',
+            description: 'Serviced the needs of numerous clients; principal among these was to migrate databases from Access 98 to MsSql 2000',
             accomplishments: [
                 'Designed and maintained databases for multiple clients',
                 'Coded custom modules for databases depending on client\'s requests',
@@ -241,7 +241,7 @@ angular.module('activities.value', [])
     ])
 ;
 ;angular.module('objective.value', [])
-    .value('objective', 'I intend to employ my experience as a software developer in handling of large assignments with ability to deliver outcome within the deadline, looking forward to serve a respectable organization with my dedication & extensive experience and interested to build a long term career.')
+    .value('objective', 'To employ my significant experience as a software developer to work large, challenging projects; to deliver quality products on time and within budget; to continue to grow my technical, leadership and managerial skills.')
 ;
 ;angular.module('projects.value', [])
     .value('projects', [
