@@ -25,6 +25,8 @@
 
     <div data-ng-repeat="experience in experiences | filter:{publish:true}">
         <div>{{ ($index + 1) }}. {{ experience.organization }}, {{ experience.position }}</div>
+        <div>&nbsp;&nbsp;&nbsp;{{ experience.city }}, {{ experience.state }}</div>
+        <div>&nbsp;&nbsp;&nbsp;{{ experience.from | date:'MMM yyyy' }} - {{ experience.to | date:'MMM yyyy' }}</div>
         <br>
 
         <div>{{ experience.description }}</div>
