@@ -96,8 +96,7 @@
                         <li data-ng-repeat="value in education.accomplishments">{{ value }}</li>
                     </ul>
                 </div>
-                <div class="columns medium-3">
-                </div>
+                <div class="columns medium-3"></div>
             </div>
         </section>
     </section>
@@ -116,7 +115,14 @@
                     </h3>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="columns medium-12">
+                    <ul class="inline-list">
+                        <li data-ng-repeat="resource in project.resources">
+                            <a data-ng-href="{{ resource.location }}">{{ resource.type }}</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="row">
                 <div class="columns medium-3">
                     <p>{{ project.description }}</p>

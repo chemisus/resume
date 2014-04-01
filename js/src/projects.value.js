@@ -7,9 +7,10 @@ angular.module('projects.value', [])
             state: 'Florida',
             from: 'September 2013',
             to: 'Current',
-            description: 'Fodszqu is a site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.',
+            description: 'A site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.',
             resources: [
-                {type: 'github', location: 'http://github.com/chemisus/fodszqu'}
+                {type: 'Website', location: 'http://fodszqu.com'},
+                {type: 'GitHub', location: 'http://github.com/chemisus/fodszqu'}
             ],
             accomplishments: [
                 'Constructed the site using PHP, Laravel, and CouchDB',
@@ -26,10 +27,16 @@ angular.module('projects.value', [])
             state: 'Florida',
             from: 'September 2013',
             to: 'Current',
-            description: '***',
-            resources: [],
-            accomplishments: ['***'],
-            keywords: ['***']
+            description: 'A single page application to track workouts and provide lessons for exercises.',
+            resources: [
+                {type: 'Website', location: 'http://chemisus.github.io/gymtracker'},
+                {type: 'GitHub', location: 'http://github.com/chemisus/gymtracker'}
+            ],
+            accomplishments: [
+                'Created the front end using AngularJS',
+                'Currently uses the browser\'s localStorage so it could be hosted on GitHub'
+            ],
+            keywords: ['AngularJS', 'HTML5', 'CSS3', 'git']
         },
         {
             publish: false,
@@ -62,8 +69,7 @@ angular.module('projects.value', [])
             title: 'Knight Krawler',
             description: 'A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.',
             resources: [
-                {type: 'website', location: 'http://knightkrawler.net'},
-                {type: 'github', location: 'https://github.com/chemisus/knightkrawler'}
+                {type: 'GitHub', location: 'https://github.com/chemisus/knightkrawler'}
             ],
             accomplishments: [
                 'Developed the software in C++ to control the steering, platform lift, and drive functions',
@@ -74,37 +80,25 @@ angular.module('projects.value', [])
         },
         {
             publish: true,
-            title: 'Slinpin',
-            description: '***',
-            resources: [
-                {type: 'composer', location: 'https://packagist.org/packages/chemisus/slinpin'},
-                {type: 'github', location: 'http://github.com/chemisus/slinpin'}
+            title: 'Euphoria',
+            description: 'A custom built PHP Model-View-Controller framework.',
+            resource: [
             ],
             accomplishments: [
                 'Used PHP reflection to get parameter types and inject appropriate data.',
-                'Developed unit tests with 100% code coverage.'
+                'Routes any request to a callback, controller, or command',
+                'Bootstraps an application',
+                'Makes use of the Slinpin and Dragon packages'
             ],
-            keywords: ['PHP', 'PHPUnit']
+            keywords: []
         },
         {
-            publish: true,
-            title: 'Dragon',
-            description: '***',
-            resources: [
-                {type: 'github', location: 'http://github.com/chemisus/dragon'}
-            ],
-            accomplishments: [
-                '***'
-            ],
-            keywords: ['PHP', 'PHPUnit']
-        },
-        {
-            publish: true,
+            publish: false,
             title: 'OpenAuth',
             description: '***',
             resources: [
                 {type: 'composer', location: 'https://packagist.org/packages/chemisus/openauth'},
-                {type: 'github', location: 'http://github.com/chemisus/openauth'}
+                {type: 'GitHub', location: 'http://github.com/chemisus/openauth'}
             ],
             accomplishments: [
                 '***'
@@ -112,12 +106,12 @@ angular.module('projects.value', [])
             keywords: ['PHP', 'PHPUnit']
         },
         {
-            publish: true,
+            publish: false,
             title: 'Moolah',
             description: '***',
             resources: [
                 {type: 'composer', location: 'https://packagist.org/packages/chemisus/moolah'},
-                {type: 'github', location: 'http://github.com/chemisus/moolah'}
+                {type: 'GitHub', location: 'http://github.com/chemisus/moolah'}
             ],
             accomplishments: [
                 '***'
@@ -127,28 +121,32 @@ angular.module('projects.value', [])
         {
             publish: true,
             title: 'Snuggie',
-            description: '***',
+            description: 'A CouchDB driver written for PHP.',
             resources: [
-                {type: 'github', location: 'http://github.com/chemisus/snuggie'}
+                {type: 'GitHub', location: 'http://github.com/chemisus/snuggie'}
             ],
             accomplishments: [
-                '***'
+                'Developed connection module that connects to CouchDB using curl',
+                'Unit tested modules using PHPUnit'
             ],
-            keywords: ['PHP', 'PHPUnit', 'CouchDB']
+            keywords: ['PHP', 'PHPUnit', 'CouchDB', 'NoSql', 'REST']
         },
         {
             publish: true,
-            title: 'Android Presentation',
-            description: 'Includes a client which runs on an android device, and a server running on a computer with powerpoint. The client can control the server and move the presentation forward/backwards, and the server will send a screenshot to the client so that the presenter knows which slide he is on without having to turn around and look at the screen.',
+            title: 'Android Presents',
+            description: 'An Android application to help given presentations by allowing the speaker to control and see the slides on their Android device.',
             resources: [
             ],
             accomplishments: [
-                '***'
+                'Developed the client to run on an android device to connect',
+                'A server running on a computer with powerpoint.',
+                'The client can control the server and move the presentation forward/backwards',
+                'The server will send a screenshot to the client so that the presenter knows which slide he is on without having to turn around and look at the screen.'
             ],
             keywords: ['Java', 'Android']
         },
         {
-            publish: true,
+            publish: false,
             title: 'Group Text',
             description: '***',
             resources: [
@@ -161,26 +159,27 @@ angular.module('projects.value', [])
         {
             publish: true,
             title: 'PS3board',
-            description: 'Allows a user to replace a keyboard and mouse with a PS3 controller.',
+            description: 'Allows a user to substitute a keyboard and mouse with a PS3 controller.',
             resources: [
-                {type: 'github', location: 'http://github.com/chemisus/ps3board'}
+                {type: 'GitHub', location: 'http://github.com/chemisus/ps3board'}
             ],
             accomplishments: [
-                'Programmed the right joystick to move the cursor, acting as a mouse.',
-                'Assigned the left and right joysticks to perform left and right mouse clicks.',
-                'Combined the left joystick and the four main buttons to simulate a keyboard.'
+                'Programmed the right joystick to move the cursor, acting as a mouse',
+                'Assigned the left and right joysticks to perform left and right mouse clicks',
+                'Combined the left joystick and the four main buttons to simulate a keyboard'
             ],
             keywords: ['C++']
         },
         {
             publish: true,
             title: 'Awesome Defense',
-            description: 'A multiplayer android tower defense game. Developed both the clients running on android devices, and the server in java which ran on a laptop.',
+            description: 'A multiplayer android tower defense game that was created for a senior design project.',
             resources: [
-                {type: 'github', location: 'http://github.com/chemisus/slinpin'}
+                {type: 'GitHub', location: 'http://github.com/chemisus/slinpin'}
             ],
             accomplishments: [
-                '***'
+                'Developed the game client that runs on Android devices',
+                'Programmed the game server in Java that would listen and accept requests, then start a game between two clients'
             ],
             keywords: ['Java', 'Android']
         },
