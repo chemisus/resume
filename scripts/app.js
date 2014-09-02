@@ -5,7 +5,7 @@
     app.constant('partials', 'partials/');
 
     app.config(['$routeProvider', 'partials', function ($routeProvider, partials) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/web', {
             templateUrl: partials + '/default/index.html',
             controller: 'ResumeCtrl',
             controllerAs: 'resume'
@@ -15,6 +15,10 @@
             templateUrl: partials + '/print/index.html',
             controller: 'ResumeCtrl',
             controllerAs: 'resume'
+        });
+
+        $routeProvider.when('/', {
+            redirectTo: '/print'
         });
     }]);
 
