@@ -1,0 +1,171 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix {
+  display: block;
+}
+i.img {
+  display: inline-block;
+  width: 0.35in;
+  height: 0.35in;
+}
+i.img.img-mysql {
+  background: url("../images/sql.svg") center;
+  background-size: cover;
+}
+i.img.img-postgresql {
+  background: url("../images/sql.svg") center;
+  background-size: cover;
+}
+i.img.img-html {
+  background: url("../images/html.svg") center;
+  background-size: cover;
+}
+i.img.img-html5 {
+  background: url("../images/html.svg") center;
+  background-size: cover;
+}
+i.img.img-php {
+  background: url("../images/php.svg") center;
+  background-size: cover;
+}
+i.img.img-asp {
+  background: url("../images/asp.svg") center;
+  background-size: cover;
+}
+/* close commented backslash hack */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin: 0 0 0.10in 0;
+}
+h4 {
+  margin: 0 0 0.05in 0;
+}
+section {
+  padding: 0.1in 0 0.1in 0;
+}
+section + section {
+  border-top: 0.02in #d3d3d3 solid;
+}
+.page {
+  background-color: #ffffff;
+  width: 8.5in;
+  margin: 0 auto 0 auto;
+}
+.resume {
+  width: 8.5in;
+  font-family: Times;
+  display: inline-block;
+  display: block;
+}
+.resume:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.resume-left {
+  float: left;
+  width: 2.9in;
+  padding: 0 0.1in 0 0;
+}
+.resume-right {
+  float: right;
+  width: 5.38in;
+  padding: 0 0 0 0.1in;
+  border-left: 0.02in #d3d3d3 solid;
+}
+.contact-address {
+  font-style: normal;
+  display: inline-block;
+}
+.contact-methods {
+  text-align: center;
+}
+.contact-methods > * {
+  margin: 0 0.15in 0 0.15in;
+}
+.experience,
+.project {
+  margin: 0 0 0.1in 0;
+}
+.experience-location,
+.experience-period {
+  float: right;
+  clear: right;
+  min-width: 0.8in;
+  margin-left: 0.2in;
+}
+.experience-from:after {
+  content: " \2014 ";
+}
+.contact-address .address-street:after,
+.contact-address .address-city:after,
+.experience-organization:after,
+.experience-city:after {
+  content: ', ';
+}
+.experience,
+.project {
+  page-break-inside: avoid;
+}
+.accomplishments {
+  padding: 0;
+  margin: 0 0 0 0.2in;
+  list-style-position: outside;
+  text-align: justify;
+}
+.keywords {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.keyword {
+  display: inline-block;
+  margin: 0.05in 0.05in 0.05in 0;
+  padding: 0.025in;
+  border-radius: 0.05in;
+  font-family: monospace;
+  border: 1px #d3d3d3 dotted;
+  color: #808080;
+}
+@media screen {
+  body {
+    background-color: #d3d3d3;
+  }
+  .page {
+    -webkit-box-shadow: 3px 3px 5px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 3px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 5px 10px rgba(0, 0, 0, 0.4);
+    margin: 1in auto 1in auto;
+    padding: 0.5in;
+  }
+}
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+  }
+}
