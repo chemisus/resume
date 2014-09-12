@@ -137,6 +137,9 @@ section + section {
   list-style-position: outside;
   text-align: justify;
 }
+.education-position {
+  display: block;
+}
 .keywords {
   padding: 0;
   margin: 0;
