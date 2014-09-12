@@ -16,7 +16,7 @@
         "linkedin": "http://lnkd.in/FU-9EV",
         "github": "http://github.com/chemisus"
     },
-    "objective": "To employ my significant experience as a software developer to work large, challenging projects; to deliver quality products on time and within budget; to continue to grow my technical, leadership and managerial skills.",
+    "objective": "To employ my extensive experience as a software developer to work large, challenging projects; to deliver quality products on time and within budget; to continue to grow my technical, leadership and managerial skills.",
     "experiences": [
         {
             "publish": true,
@@ -156,7 +156,7 @@
             "to": "2006-12-01",
             "description": "Responded to house calls to provide services for computer and network issues or requests",
             "accomplishments": [
-                "Experience significant word of mouth advertisement from satisfied clients",
+                "Experienced significant word of mouth advertisement from satisfied clients",
                 "Tutored clients, mostly seniors, on the use of cameras, printers and software programs",
                 "Built custom high performance computers for customers to save money",
                 "Repaired several computers, laptops, and network devices in clients' homes"
@@ -192,7 +192,7 @@
         "description": "Created the chapter's website and maintained it until graduation. Still involved in the site, and mentor those maintaining it.",
         "accomplishments": [
             "Prepared the site using Linux, Apache, MySql, and PHP",
-            "Mentor new students on how to update the site using ssh and git",
+            "Mentored new students on how to update the site using ssh and git",
             "Used as a test environment to learn about custom frameworks and dependency injection libraries"
         ],
         "keywords": ["PHP", "CouchDB", "HTML5", "CSS3", "jQuery", "AngularJS", "git"]
