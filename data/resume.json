@@ -30,7 +30,7 @@
             "accomplishments": [
                 "Reduced report generation time by 83% by restructuring database tables and optimizing queries",
                 "Created a tool that would import spreadsheets containing a radio station's track spins information, then generate reports. This eliminated a weeks worth of calculations previously performed by hand",
-                "Currently working on a cart and billing system to handle both online and disc-by-mail subscriptions. The system is being built as a single page app with Laravel and AngularJS, and tested using Karma, Protractor and PHPUnit."
+                "Created a custom cart and billing system to handle both online and disc-by-mail subscriptions, using PHP, PostgreSql, and Laravel"
             ],
             "keywords": ["PHP", "PHPUnit", "PostgreSql", "HTML5", "CSS3", "jQuery", "AngularJS", "REST", "git"]
         },
