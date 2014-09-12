@@ -244,7 +244,7 @@
             ],
             "accomplishments": [
                 "Created the front end using AngularJS",
-                "Currently uses the browser's localStorage so it could be hosted on GitHub"
+                "Made use of the browser's localStorage so it could be hosted on GitHub"
             ],
             "keywords": ["AngularJS", "HTML5", "CSS3", "git"]
         },
