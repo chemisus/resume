@@ -29,8 +29,8 @@
             "description": "Critical member of a development team which replaced a faulty system reliant on failing hardware and end-of-life software. Result was a significant improvement in system performance coupled with reduced operating costs. ",
             "accomplishments": [
                 "Reduced report generation time by 83% by restructuring database tables and optimizing queries",
-                "Created a tool that would import spreadsheets containing a radio station's track spins information, then generate reports. This eliminated a weeks worth of calculations previously performed by hand",
-                "Created a custom cart and billing system to handle both online and disc-by-mail subscriptions, using PHP, PostgreSql, and Laravel"
+                "Created a tool that imported spreadsheets containing a radio station's track play counts, then generated reports, eliminating a week's worth of calculations previously performed by hand",
+                "Created a custom cart and billing system to handle online and disc-by-mail subscriptions"
             ],
             "keywords": ["PHP", "PHPUnit", "PostgreSql", "HTML5", "CSS3", "jQuery", "AngularJS", "REST", "git"]
         },
