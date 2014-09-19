@@ -274,7 +274,7 @@
         {
             "publish": true,
             "title": "Knight Krawler",
-            "description": "An electric mobile platform, designed and built to transport a user in a wheelchair over all terrain, for a senior design project.",
+            "description": "An electric mobile platform designed and built to transport a user in a wheelchair over all terrain, for a senior design project.",
             "resources": [
                 {
                     "type": "GitHub",
@@ -398,7 +398,7 @@
         {
             "publish": true,
             "title": "Awesome Defense",
-            "description": "A multiplayer Android tower defense game that was created for a senior design project.",
+            "description": "A multiplayer Android tower defense game created for a senior design project.",
             "resources": [
                 {
                     "type": "GitHub",
