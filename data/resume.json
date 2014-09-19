@@ -398,7 +398,7 @@
         {
             "publish": true,
             "title": "Awesome Defense",
-            "description": "A multiplayer Android tower defense game created for a senior design project.",
+            "description": "An Android multi-player tower defense game created for a senior design project.",
             "resources": [
                 {
                     "type": "GitHub",
