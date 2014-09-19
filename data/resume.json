@@ -155,7 +155,7 @@
             "to": "2006-12-01",
             "description": "Responded to house calls to provide services for computer and network issues or requests",
             "accomplishments": [
-                "Experienced significant word of mouth advertisement from satisfied clients",
+                "Experienced significant word-of-mouth advertisement from satisfied clients",
                 "Tutored clients, mostly seniors, on the use of cameras, printers and software programs",
                 "Built custom high performance computers for customers to save money",
                 "Repaired several computers, laptops, and network devices in clients' homes"
@@ -216,15 +216,13 @@
                 }
             ],
             "accomplishments": [
-                "Constructed the site using PHP, Laravel, and CouchDB",
-                "Created integration tests to ensure that the site's API works as intended",
-                "Developed a bash script for both Linux and OSX to utilize the features on the site. This includes encrypting and decrypting messages via openssl and rsa, and sending and retrieving messages via curl.",
+                "Developed a bash script for both Linux and OSX to utilize the features on the site, including encrypting and decrypting messages via openssl and rsa, and sending and retrieving messages via curl.",
                 "Implemented a process to accept bitcoin payments for amounts depending on message sizes"
             ],
             "keywords": ["PHP", "Laravel", "CouchDB", "HTML5", "CSS3", "REST", "git", "bash", "encryption", "curl", "bitcoin"]
         },
         {
-            "publish": true,
+            "publish": false,
             "title": "Gym Tracker",
             "city": "Orlando",
             "state": "Florida",
@@ -297,10 +295,8 @@
             "resource": [
             ],
             "accomplishments": [
-                "Used PHP reflection to get parameter types and inject appropriate data.",
-                "Routes any request to a callback, controller, or command",
-                "Bootstraps an application",
-                "Makes use of the Slinpin and Dragon packages"
+                "Used PHP reflection to get parameter types and inject appropriate data",
+                "Routes an http request to a callback, controller, or command"
             ],
             "keywords": []
         },
@@ -353,7 +349,7 @@
                 }
             ],
             "accomplishments": [
-                "Developed connection module that connects to CouchDB using curl",
+                "Developed a PHP module that connects and implements CouchDB via curl",
                 "Unit tested modules using PHPUnit"
             ],
             "keywords": ["PHP", "PHPUnit", "CouchDB", "NoSql", "REST"]
@@ -361,14 +357,13 @@
         {
             "publish": true,
             "title": "Android Presents",
-            "description": "An Android application to help given presentations by allowing the speaker to control and see the slides on their Android device.",
+            "description": "An Android application to help presenters by extending control of the presentation slides to their device.",
             "resources": [
             ],
             "accomplishments": [
-                "Developed the client to run on an android device to connect",
-                "A server running on a computer with powerpoint.",
-                "The client can control the server and move the presentation forward/backwards",
-                "The server will send a screenshot to the client so that the presenter knows which slide he is on without having to turn around and look at the screen."
+                "An Android application to help presenters by extending control of the presentation slides to their device",
+                "The client can control the server and move forward or backwards in the slides",
+                "The server will send a screenshot to the devices so that the presenters know which slides they are on without turning their back to the audience"
             ],
             "keywords": ["Java", "Android"]
         },
@@ -386,7 +381,7 @@
         {
             "publish": true,
             "title": "PS3board",
-            "description": "Allows a user to substitute a keyboard and mouse with a PS3 controller.",
+            "description": "Allows a user to replace a keyboard and mouse with a PS3 controller.",
             "resources": [
                 {
                     "type": "GitHub",
@@ -403,7 +398,7 @@
         {
             "publish": true,
             "title": "Awesome Defense",
-            "description": "A multiplayer android tower defense game that was created for a senior design project.",
+            "description": "A multiplayer Android tower defense game that was created for a senior design project.",
             "resources": [
                 {
                     "type": "GitHub",
@@ -412,7 +407,7 @@
             ],
             "accomplishments": [
                 "Developed the game client that runs on Android devices",
-                "Programmed the game server in Java that would listen and accept requests, then start a game between two clients"
+                "Programmed the game server in Java to listen and accept requests, then start a game between two clients"
             ],
             "keywords": ["Java", "Android"]
         },
