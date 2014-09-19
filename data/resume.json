@@ -44,11 +44,10 @@
             "to": "2013-07-01",
             "description": "Served on a specific task contract to restructure the organization’s internal website. The project followed agile and pair programming strategies.",
             "accomplishments": [
-                "Performed as lead developer and coach: mentored other team members; explained and clarified concepts; assisted with milestone definition and progress assessment.",
+                "Performed as lead developer",
+                "Mentored other team members by explaining and clarifying concepts, and assisted with milestone definition and progress assessment",
                 "Created a spreadsheet for sprint planning; including assigning points to tasks, sprint length estimation, and generating burn-down charts",
-                "Implemented Authorize.net API for payment processing and OAuth for quick login with Google profiles",
-                "Unit and integration tested the application with PHPUnit",
-                "Used Laravel and AngularJS for the backend and frontend frameworks, respectively"
+                "Implemented Authorize.net API for payment processing and OAuth for quick login with Google profiles"
             ],
             "keywords": ["PHP", "PHPUnit", "MySql", "HTML5", "CSS3", "jQuery", "AngularJS", "git"]
         },
@@ -78,8 +77,8 @@
             "description": "Created and maintained the chapter's website until graduation. Still involved in mentoring those maintaining it.",
             "accomplishments": [
                 "Prepared the site using Linux, Apache, MySql, and PHP",
-                "Mentor new students on how to update the site using ssh and git",
-                "Used as a test environment to learn about custom frameworks and dependency injection libraries"
+                "Mentored new students regarding site updates using ssh and git",
+                "Implemented a custom framework and dependency injection library"
             ],
             "keywords": ["PHP", "CouchDB", "HTML5", "CSS3", "jQuery", "AngularJS", "git"]
         },
@@ -93,8 +92,8 @@
             "to": "2011-06-01",
             "description": "Lead the development of mintees.com. Collaborated with project manager to create or update several sites for various clients.",
             "accomplishments": [
-                "Lead developer in the creation of mintees.com: successfully met a demanding three week deadline.",
-                "Created and updated sites and e-commerce stores for several clients using PHP and a proprietary content management system"
+                "Lead developer in the creation of mintees.com and successfully met a demanding three week deadline.",
+                "Created or updated sites and e-commerce stores for several clients"
             ],
             "keywords": ["PHP", "HTML5", "CSS3", "jQuery", "git"]
         },
@@ -108,9 +107,9 @@
             "to": "2010-11-01",
             "description": "Created a customer relation management system",
             "accomplishments": [
-                "Developed a portal for technical support to organize communications with customers",
+                "Developed a system to organize various methods of communication between customers and support staff",
                 "Created a module that imported e-mails between customers and the tech support team",
-                "Maintained the company's main website"
+                "Maintained and added functionality to the company's website, improving the user's experience"
             ],
             "keywords": ["PHP", "HTML", "CSS", "jQuery", "git"]
         },
@@ -125,7 +124,7 @@
             "description": "In charge of maintaining both the organization's internal and external websites.",
             "accomplishments": [
                 "Resolved long standing system faults",
-                "Doubled as network admin for network and computer issues"
+                "Doubled as admin for network and computer issues"
             ],
             "keywords": ["PHP", "HTML", "CSS"]
         },
@@ -140,8 +139,8 @@
             "description": "Serviced the needs of numerous clients; principal among these was to migrate databases from Access 98 to MsSql 2000",
             "accomplishments": [
                 "Designed and maintained databases for multiple clients",
-                "Coded custom modules for databases depending on client's requests",
-                "Created server and client applications for various users",
+                "Coded custom modules for databases based on client's requests",
+                "Created server and browser applications for various clients",
                 "Completed unfinished websites"
             ],
             "keywords": ["VBA", "Access", "VB6", "ASP"]
