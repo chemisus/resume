@@ -26,7 +26,7 @@
             "state": "Florida",
             "from": "2014-01-10",
             "to": "Current",
-            "description": "Critical member of a development team which replaced a faulty system reliant on failing hardware and end-of-life software. Result was a significant improvement in system performance coupled with reduced operating costs. ",
+            "description": "Critical member of a development team which replaced an e-store system whose hardware failed and software had expired. Result was a significant improvement in system performance coupled with reduced operating costs.",
             "accomplishments": [
                 "Reduced report generation time by 83% by restructuring database tables and optimizing queries",
                 "Created a tool that imported spreadsheets containing a radio station's track play counts, then generated reports, eliminating a week's worth of calculations previously performed by hand",
@@ -42,7 +42,7 @@
             "state": "Florida",
             "from": "2013-04-01",
             "to": "2013-07-01",
-            "description": "Served on a specific task contract to restructure the organization’s internal website. The project followed agile and pair programming strategies.",
+            "description": "Served on a specific-task contract to restructure the organization’s internal website. The project followed agile and paired-programming strategies.",
             "accomplishments": [
                 "Performed as lead developer",
                 "Mentored other team members by explaining and clarifying concepts, and assisted with milestone definition and progress assessment",
@@ -59,7 +59,7 @@
             "state": "Florida",
             "from": "2011-06-01",
             "to": "2012-12-01",
-            "description": "Was the sole developer working directly for the Dean of Engineering and the Director of Engineering Outreach: created and maintained websites explaining and publicizing UCF Engineering programs and activities.",
+            "description": "Sole developer who worked directly for the Dean of Engineering and the Director of Engineering Outreach to create and maintain websites explaining and publicizing UCF Engineering programs and activities.",
             "accomplishments": [
                 "Developed the website for UCF's program for Innovation through Institutional Integration",
                 "Maintained the websites for the outreach programs Young Entrepreneur Scholars (YES) and Girls Excelling in Math and Science (GEMS)"
@@ -74,7 +74,7 @@
             "state": "Florida",
             "from": "2009-08-01",
             "to": "2012-12-01",
-            "description": "Created and maintained the chapter's website until graduation. Still involved in mentoring those maintaining it.",
+            "description": "Created and maintained the chapter's website until graduation. Still involved in mentoring students who maintain the site.",
             "accomplishments": [
                 "Prepared the site using Linux, Apache, MySql, and PHP",
                 "Mentored new students regarding site updates using ssh and git",
@@ -90,7 +90,7 @@
             "state": "Florida",
             "from": "2010-11-01",
             "to": "2011-06-01",
-            "description": "Lead the development of mintees.com. Collaborated with project manager to create or update several sites for various clients.",
+            "description": "",
             "accomplishments": [
                 "Lead developer in the creation of mintees.com and successfully met a demanding three week deadline.",
                 "Created or updated sites and e-commerce stores for several clients"
@@ -105,7 +105,7 @@
             "state": "Florida",
             "from": "2010-05-01",
             "to": "2010-11-01",
-            "description": "Created a customer relation management system",
+            "description": "",
             "accomplishments": [
                 "Developed a system to organize various methods of communication between customers and support staff",
                 "Created a module that imported e-mails between customers and the tech support team",
@@ -121,7 +121,7 @@
             "state": "Florida",
             "from": "2008-01-01",
             "to": "2009-12-01",
-            "description": "In charge of maintaining both the organization's internal and external websites.",
+            "description": "",
             "accomplishments": [
                 "Resolved long standing system faults",
                 "Doubled as admin for network and computer issues"
