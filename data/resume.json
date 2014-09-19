@@ -274,7 +274,7 @@
         {
             "publish": true,
             "title": "Knight Krawler",
-            "description": "A senior design project aimed at creating an electric mobile platform to transport the user and wheelchair over all terrain.",
+            "description": "An electric mobile platform, designed and built to transport a user in a wheelchair over all terrain, for a senior design project.",
             "resources": [
                 {
                     "type": "GitHub",
