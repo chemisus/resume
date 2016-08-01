@@ -5,10 +5,10 @@
         "full_name": "Terrence Howard",
         "title": "Software Developer",
         "address": {
-            "street": "14050 Lotus Lane #838",
-            "city": "Centreville",
+            "street": "11238 Fox Lake Ct",
+            "city": "Fairfax",
             "state": "VA",
-            "zip": "20120"
+            "zip": "22033"
         },
         "phone": "(239) 222-1246",
         "email": "terrence.l.howard@gmail.com",
@@ -20,12 +20,35 @@
     "experiences": [
         {
             "publish": true,
+            "position": "Senior Software Engineer",
+            "organization": "Alexander Street",
+            "city": "Alexandria",
+            "state": "Virginia",
+            "from": "2015-01-26",
+            "to": "Current",
+            "description": "Served as one of the main developers for API support and enhancements. Had the privilege to be the API developer in small team while creating the organization's first mobile application.",
+            "accomplishments": [
+                "Designed and developed from prototype to release an API for the organization's mobile application",
+                "Turned the main site into a multi-site, opening a new source of revenue by hosting for other organizations",
+                "Created sandbox environments with docker for development and databases"
+            ],
+            "keywords": [
+                "PHP",
+                "PHPUnit",
+                "MySql",
+                "Solr",
+                "docker",
+                "git"
+            ]
+        },
+        {
+            "publish": true,
             "position": "Software Developer",
             "organization": "Promo Only",
             "city": "Orlando",
             "state": "Florida",
             "from": "2014-01-10",
-            "to": "Current",
+            "to": "2015-01-01",
             "description": "Critical member of a development team which replaced an e-store system whose hardware failed and software had expired. Result was a significant improvement in system performance coupled with reduced operating costs.",
             "accomplishments": [
                 "Reduced report generation time by 83% by restructuring database tables and optimizing queries",
@@ -65,22 +88,6 @@
                 "Maintained the websites for the outreach programs Young Entrepreneur Scholars (YES) and Girls Excelling in Math and Science (GEMS)"
             ],
             "keywords": ["PHP", "MySql", "HTML5", "CSS3", "git"]
-        },
-        {
-            "publish": true,
-            "position": "Web Developer",
-            "organization": "Theta Tau",
-            "city": "Orlando",
-            "state": "Florida",
-            "from": "2009-08-01",
-            "to": "2012-12-01",
-            "description": "Created and maintained the chapter's website until graduation. Still involved in mentoring students who maintain the site.",
-            "accomplishments": [
-                "Prepared the site using Linux, Apache, MySql, and PHP",
-                "Mentored new students regarding site updates using ssh and git",
-                "Implemented a custom framework and dependency injection library"
-            ],
-            "keywords": ["PHP", "CouchDB", "HTML5", "CSS3", "jQuery", "AngularJS", "git"]
         },
         {
             "publish": true,
@@ -199,12 +206,12 @@
     "projects": [
         {
             "publish": true,
-            "title": "Fodszqu",
+            "title": "Fodszqu (Encrypt)",
             "city": "Orlando",
             "state": "Florida",
             "from": "September 2013",
             "to": "Current",
-            "description": "A site that allows users to anonymously upload messages or files. It is encouraged, but not required, that the user encrypt the messages as they see fit.",
+            "description": "A proof of concept that allows users to send end-to-end encrypted messages anonymously using ssh keys. No accounts necessary.",
             "resources": [
                 {
                     "type": "Website",
@@ -216,10 +223,45 @@
                 }
             ],
             "accomplishments": [
-                "Developed a bash script for both Linux and OSX to utilize the features on the site, including encrypting and decrypting messages via openssl and rsa, and sending and retrieving messages via curl.",
+                "Developed tools to allow a user to send and receive messages, including bash scripts and web pages.",
                 "Implemented a process to accept bitcoin payments for amounts depending on message sizes"
             ],
-            "keywords": ["PHP", "Laravel", "CouchDB", "HTML5", "CSS3", "REST", "git", "bash", "encryption", "curl", "bitcoin"]
+            "keywords": ["PHP", "CouchDB", "REST", "git", "bash", "encryption", "bitcoin"]
+        },
+        {
+            "publish": true,
+            "title": "PS3board",
+            "description": "Reads data stream from a PS3 controller, interpreting events as a keyboard and mouse.",
+            "resources": [
+                {
+                    "type": "GitHub",
+                    "location": "http://github.com/chemisus/ps3board"
+                }
+            ],
+            "accomplishments": [
+                "Programmed the right joystick to move the mouse pointer",
+                "Assigned the left and right joysticks buttons to perform respective mouse clicks",
+                "Mapped combinations of left joystick and the remaining PS3 buttons to various keyboard buttons"
+            ],
+            "keywords": ["C++"]
+        },
+        {
+            "publish": true,
+            "title": "Awesome Defense",
+            "description": "An Android multi-player tower defense game created for a senior design project.",
+            "resources": [
+                {
+                    "type": "GitHub",
+                    "location": "http://github.com/chemisus/slinpin"
+                }
+            ],
+            "accomplishments": [
+                "Senior design project; earned an A",
+                "Project manager for team of 5",
+                "Developed the game client that runs on Android devices",
+                "Programmed the game server in Java to listen and accept requests, then start a game between two clients"
+            ],
+            "keywords": ["Java", "Android"]
         },
         {
             "publish": false,
@@ -289,7 +331,7 @@
             "keywords": ["Arduino", "C++"]
         },
         {
-            "publish": true,
+            "publish": false,
             "title": "Euphoria",
             "description": "A custom built PHP Model-View-Controller framework.",
             "resource": [
@@ -340,6 +382,22 @@
         },
         {
             "publish": true,
+            "title": "Token",
+            "description": "A stateless token library for PHP.",
+            "resources": [
+                {
+                    "type": "GitHub",
+                    "location": "http://github.com/projx-io/token"
+                }
+            ],
+            "accomplishments": [
+                "Can customize the token to pack as much data necessary",
+                "Provides compression, encryption, and versioning features for tokens"
+            ],
+            "keywords": ["PHP", "PHPUnit"]
+        },
+        {
+            "publish": true,
             "title": "Snuggie",
             "description": "A CouchDB driver written for PHP.",
             "resources": [
@@ -356,6 +414,21 @@
         },
         {
             "publish": true,
+            "title": "Theta Tau Website",
+            "organization": "Theta Tau",
+            "city": "Orlando",
+            "state": "Florida",
+            "from": "2009-08-01",
+            "to": "2012-12-01",
+            "description": "Volunteered to create and maintained the chapter's website.",
+            "accomplishments": [
+                "Created the site using Linux, Apache, MySql, and PHP",
+                "Mentored other students regarding site updates using ssh and git"
+            ],
+            "keywords": ["PHP", "CouchDB", "HTML5", "CSS3", "jQuery", "AngularJS", "git"]
+        },
+        {
+            "publish": false,
             "title": "Android Presents",
             "description": "An Android application to help presenters by extending control of the presentation slides to their device.",
             "resources": [
@@ -377,39 +450,6 @@
                 "***"
             ],
             "keywords": ["Java"]
-        },
-        {
-            "publish": true,
-            "title": "PS3board",
-            "description": "Allows a user to replace a keyboard and mouse with a PS3 controller.",
-            "resources": [
-                {
-                    "type": "GitHub",
-                    "location": "http://github.com/chemisus/ps3board"
-                }
-            ],
-            "accomplishments": [
-                "Programmed the right joystick to move the cursor, acting as a mouse",
-                "Assigned the left and right joysticks to perform left and right mouse clicks",
-                "Combined the left joystick and the four main buttons to simulate a keyboard"
-            ],
-            "keywords": ["C++"]
-        },
-        {
-            "publish": true,
-            "title": "Awesome Defense",
-            "description": "An Android multi-player tower defense game created for a senior design project.",
-            "resources": [
-                {
-                    "type": "GitHub",
-                    "location": "http://github.com/chemisus/slinpin"
-                }
-            ],
-            "accomplishments": [
-                "Developed the game client that runs on Android devices",
-                "Programmed the game server in Java to listen and accept requests, then start a game between two clients"
-            ],
-            "keywords": ["Java", "Android"]
         },
         {
             "publish": false,

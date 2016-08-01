@@ -17,6 +17,12 @@
             controllerAs: 'resume'
         });
 
+        $routeProvider.when('/restyle', {
+            templateUrl: partials + '/restyle/index.html',
+            controller: 'ResumeCtrl',
+            controllerAs: 'resume'
+        });
+
         $routeProvider.when('/', {
             redirectTo: '/print'
         });
