@@ -4,13 +4,6 @@
         "last_name": "Howard",
         "full_name": "Terrence Howard",
         "title": "Software Developer",
-        "address": {
-            "street": "11238 Fox Lake Ct",
-            "city": "Fairfax",
-            "state": "VA",
-            "zip": "22033"
-        },
-        "phone": "(239) 222-1246",
         "email": "terrence.l.howard@gmail.com",
         "qrcode": "qrcode-resume.png",
         "linkedin": "http://lnkd.in/FU-9EV",
