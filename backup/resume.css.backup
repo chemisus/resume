@@ -1,0 +1,100 @@
+#toc {
+    font-size: xx-small;
+}
+
+
+
+/*!*.organization {*!*/
+/*!*background-color: blue;*!*/
+/*!*}*!*/
+
+/*!*!*.accomplishments > ul, .tasks > ul {*!*!*/
+/*!*!*column-count: 4;*!*!*/
+/*!*!*column-gap: 20px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*ul {*!*/
+/*!*display: flex;*!*/
+/*!*flex-flow: row wrap;*!*/
+/*!*}*!*/
+
+/*!*.item {*!*/
+/*!*!*list-style: none;*!*!*/
+/*!*!*list-style-position: inside;*!*!*/
+/*!*margin-left: 20px;*!*/
+/*!*width: 300px;*!*/
+/*!*!*border: 1px black solid;*!*!*/
+/*!*}*!*/
+
+/** {*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*}*/
+
+/*body {*/
+/*background-color: gray;*/
+/*width: 8.5in;*/
+/*height: 11in;*/
+/*margin: auto;*/
+/*}*/
+
+/*header, article {*/
+/*background-color: white;*/
+/*}*/
+
+/*h1 {*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*}*/
+
+/*ul {*/
+/*padding: 0 0.15in;*/
+/*}*/
+
+/*li {*/
+/*list-style-position: inherit;*/
+/*}*/
+
+/*.keywords h1, .accomplishments h1, .tasks h1 {*/
+/*display: none;*/
+/*}*/
+
+/*.experience {*/
+/*!*border-top: 1px black solid;*!*/
+/*}*/
+
+/*.keywords ul {*/
+/*display: inline-flex;*/
+/*flex-flow: row wrap;*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*justify-content: flex-end;*/
+/*}*/
+
+/*.keywords ul li {*/
+/*list-style: none;*/
+/*font-size: small;*/
+/*margin-left: 0.05in;*/
+/*}*/
+
+/*.experience {*/
+/*display: flex;*/
+/*flex-flow: row;*/
+/*}*/
+
+/*.experience .header {*/
+/*width: 2.25in;*/
+/*flex: 0 0 auto;*/
+/*text-align: right;*/
+/*!*border-right: 1px black solid;*!*/
+/*padding: 0.05in;*/
+/*}*/
+
+/*.experience .body {*/
+/*padding: 0.05in;*/
+/*}*/
+
+/*.tasks, .accomplishments {*/
+/*!*font-size: 0.9em;*!*/
+/*!*line-height: 1.2em;*!*/
+/*}*/

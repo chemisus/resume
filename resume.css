@@ -1,0 +1,146 @@
+* {
+}
+
+html {
+    background-color: gray;
+}
+
+body {
+    width: 8.5in;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    margin-left: 0.6in;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.email {
+    display: block;
+}
+
+.phone {
+    font-size: 0.7rem;
+}
+
+.github {
+    margin-left: 0.1in;
+    font-family: monospace;
+    font-size: 0.7rem;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.first, .last {
+    font-weight: bold;
+}
+
+.host {
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.occupation {
+    font-style: italic;
+}
+
+h2 {
+    margin: 0.1in auto 0.05in auto;
+    /*padding-left: 0.6in;*/
+    /*text-align: center;*/
+    /*font-size: 1.2rem;*/
+    font-size: 1rem;
+    border-bottom: 1px black solid;
+}
+
+#resume {
+    padding: 0.3in;
+}
+
+.header {
+    display: flex;
+}
+
+.header > * + * {
+    margin-left: 0.1in;
+}
+
+.keywords {
+    display: flex;
+    padding: 0;
+    margin: 0 0.6in;
+    list-style: none;
+    word-spacing: 0.1in;
+    font-size: 0.75em;
+    font-style: italic;
+    line-height: 0.75em;
+}
+
+.keyword + .keyword {
+    margin-left: 0.1in;
+}
+
+.duties {
+    padding: 0;
+    margin: 0.05in 0.6in;
+}
+
+.period {
+    align-self: baseline;
+    font-size: 0.65rem;
+    line-height: 0.65rem;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: flex-end;
+    width: 0.5in;
+}
+
+.duration {
+    display: none;
+}
+
+.organization {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: baseline;
+}
+
+.title {
+    font-style: italic;
+    align-self: baseline;
+    flex-grow: 1;
+}
+
+.location {
+    align-self: baseline;
+    font-size: 0.8rem;
+}
+
+.start {
+    align-self: flex-start;
+    order: 1;
+}
+
+.listing {
+    font-size: .92rem;
+}
+
+.listing + .listing {
+    margin-top: 0.1in;
+}

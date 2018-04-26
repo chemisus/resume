@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function loadXMLDoc(filename) {
+            const req = new XMLHttpRequest();
+            req.open("GET", filename, false);
+            req.send("");
+
+            return req.responseXML;
+        }
+
+        function displayResult() {
+            const xml = loadXMLDoc("resume.xml");
+            const xsl = loadXMLDoc("resume.xsl");
+
+            const xsltProcessor = new XSLTProcessor();
+
+            xsltProcessor.importStylesheet(xsl);
+            const resultDocument = xsltProcessor.transformToFragment(xml, document);
+
+            document.getElementById('resume').appendChild(resultDocument);
+        }
+
+        window.onload = displayResult;
+    </script>
+</head>
+<body onload="displayResult()">
+<div id="resume"></div>
+</body>
+</html>

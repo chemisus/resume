@@ -1,0 +1,112 @@
+<xsl:stylesheet version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
+    <xsl:template match="resume">
+        <html>
+            <head>
+                <title>resume</title>
+                <link href="resume.css" type="text/css" rel="stylesheet"/>
+            </head>
+            <body>
+                <!--<table id="toc">-->
+                <!--<xsl:for-each select="experience">-->
+                <!--<tr>-->
+                <!--<td>-->
+                <!--<xsl:value-of select="from"/>-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<xsl:value-of select="to"/>-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<xsl:value-of select="organization"/>-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<xsl:value-of select="position"/>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--</xsl:for-each>-->
+                <!--</table>-->
+
+                <xsl:for-each select="experience">
+                    <div class="experience">
+                        <div class="header">
+                            <div class="date">
+                                <xsl:value-of select="from"/>
+                                <xsl:value-of select="to"/>
+                            </div>
+                            <div class="organization">
+                                <xsl:value-of select="organization"/>
+                            </div>
+                            <div class="position">
+                                <xsl:value-of select="position"/>
+                            </div>
+                            <div class="city">
+                                <xsl:value-of select="location/city"/>
+                            </div>
+                            <div class="state">
+                                <xsl:value-of select="location/state"/>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul class="tasks">
+                                <xsl:for-each select="tasks/item">
+                                    <li>
+                                        <xsl:value-of select="@label"/>
+                                    </li>
+                                </xsl:for-each>
+                            </ul>
+                            <ul class="accomplishments">
+                                <xsl:for-each select="accomplishments/item">
+                                    <li>
+                                        <xsl:value-of select="@label"/>
+                                    </li>
+                                </xsl:for-each>
+                            </ul>
+                        </div>
+                    </div>
+                </xsl:for-each>
+
+                <!--<table class="experience">-->
+                <!--<xsl:for-each select="experience">-->
+                <!--<tr class="header">-->
+                <!--<td class="from">-->
+                <!--<xsl:value-of select="from"/>-->
+                <!--</td>-->
+                <!--<td class="to">-->
+                <!--<xsl:value-of select="to"/>-->
+                <!--</td>-->
+                <!--<td class="organization">-->
+                <!--<xsl:value-of select="organization"/>-->
+                <!--</td>-->
+                <!--<td class="position">-->
+                <!--<xsl:value-of select="position"/>-->
+                <!--</td>-->
+                <!--<td class="city">-->
+                <!--<xsl:value-of select="location/city"/>-->
+                <!--</td>-->
+                <!--<td class="state">-->
+                <!--<xsl:value-of select="location/state"/>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td colspan="6">-->
+                <!--<ul class="tasks">-->
+                <!--<xsl:for-each select="tasks/item">-->
+                <!--<li>-->
+                <!--<xsl:value-of select="@label"/>-->
+                <!--</li>-->
+                <!--</xsl:for-each>-->
+                <!--</ul>-->
+                <!--<ul class="accomplishments">-->
+                <!--<xsl:for-each select="accomplishments/item">-->
+                <!--<li>-->
+                <!--<xsl:value-of select="@label"/>-->
+                <!--</li>-->
+                <!--</xsl:for-each>-->
+                <!--</ul>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--</xsl:for-each>-->
+                <!--</table>-->
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

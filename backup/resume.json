@@ -1,0 +1,15 @@
+{
+  "experiences": [
+    {
+      "tasks": [
+        "fixed bugs and data issues reported by qa team",
+        "handled critical issues experienced on live environments",
+        "generated usage and performance reports",
+        "created and executed import scripts for customers, users, or internal staff",
+        "participated in standup meetings and architecture review board",
+        "reviewed code changes submitted by other developers",
+        "patched bugs found in solr and solr plugins"
+      ]
+    }
+  ]
+}
