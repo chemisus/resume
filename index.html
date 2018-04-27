@@ -1,6 +1,7 @@
 <!doctype html>
 <html data-ng-app="resume">
 <head>
+    <title>Terrence Howard - Resume</title>
     <link href="resume.css" rel="stylesheet"/>
 </head>
 <body>
@@ -9,16 +10,13 @@
 
 <div id="resume">
     <header>
-        <div class="contact">
-            <div class="email">
-                <span class="name"><span class="first">Terrence</span>.<span class="last">Howard</span></span><span class="host">@knights.ucf.edu</span>
-            </div>
+        <div class="email">
+            <span class="name">
+                <span class="first">{{ resume.first }}</span>.<span class="last">{{ resume.last }}</span></span><span class="host">@knights.ucf.edu
+            </span>
         </div>
-        <div class="info">
-            <span class="occupation">{{ resume.occupation }}</span>
-        </div>
-        <span class="phone">{{ resume.phone }}</span>
-        <!--<span class="github">{{ resume.github }}</span>-->
+        <div class="occupation">{{ resume.occupation }}</div>
+        <div class="phone">{{ resume.phone }}</div>
     </header>
     <h2>Education</h2>
     <div class="education" data-ng-repeat="listing in resume.educations" data-listing="listing"></div>
@@ -29,11 +27,17 @@
 <script id="listing.html" type="text/ng-template">
     <div class="listing">
         <div class="header">
-            <div class="period"><span class="start">{{ listing.start | date:'MMM yyyy' }}</span><span class="end">&nbsp;{{ (listing.end || 'Current') | date:'MMM yyyy' }}</span></div>
+            <div class="period">
+                <span class="start">{{ listing.start | date:'MMM yyyy' }}</span>
+                <span class="end">&nbsp;{{ (listing.end || 'Current') | date:'MMM yyyy' }}</span>
+            </div>
             <div class="duration" data-ng-if="listing.start">{{ listing.start | duration:listing.end }}</div>
             <div class="organization">{{ listing.organization }}</div>
             <div class="title">{{ listing.title }}</div>
-            <div class="location"><span class="city">{{ listing.city }}</span>, <span class="state">{{ listing.state }}</span></div>
+            <div class="location">
+                <span class="city">{{ listing.city }}</span>,
+                <span class="state">{{ listing.state }}</span>
+            </div>
         </div>
         <ul class="keywords">
             <li class="keyword" data-ng-repeat="item in listing.keywords">{{ item }}</li>

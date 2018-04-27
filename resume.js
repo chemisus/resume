@@ -2,6 +2,8 @@
     const app = angular.module('resume', []);
 
     app.value('resume', {
+        "first": "Terrence",
+        "last": "Howard",
         "name": "Terrence Howard",
         "email": "terrence.howard@knights.ucf.edu",
         "phone": "(239) 222-1246",
@@ -10,7 +12,7 @@
         "experiences": [
             {
                 "organization": "ProQuest",
-                "title": "Senior Software Developer",
+                "title": "Senior Software Engineer",
                 "start": "2015-01-26",
                 "city": "Alexandria",
                 "state": "VA",
